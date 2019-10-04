@@ -19,7 +19,7 @@ class Footer extends React.Component {
               style={{
                 color: "#0C54A3",
                 backgroundColor: "#0C54A3",
-                height: 2,
+                height: 1,
                 width: 50
               }}
             />

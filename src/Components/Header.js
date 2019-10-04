@@ -11,12 +11,14 @@ class Header extends React.Component {
     return(
       <header className="header-background">
         <div style={ style.header_style }>
-          <a href='ibcuni.com'>
-            <img src={ logo } style={ style.logoStyle } alt="logo"/>
-          </a>
-          <a href="ibcuni.com" style={ style.collegeNameStyle }>
-            International Bible College & University
-          </a>
+          <div style={{ marginLeft: '10%', alignItems: 'center', display: 'flex' }}>
+            <a href='ibcuni.com'>
+              <img src={ logo } style={ style.logoStyle } alt="logo"/>
+            </a>
+            <a href="ibcuni.com" style={ style.collegeNameStyle }>
+              International Bible College & University
+            </a>
+          </div>
         </div>
       </header>
     );
@@ -28,7 +30,6 @@ const style = {
     overflow: "hidden",
     height: 90,
     display: 'flex',
-    alignItems: 'center',
     backgroundColor: 'white',
   },
   logoStyle:{

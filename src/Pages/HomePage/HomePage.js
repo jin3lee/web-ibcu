@@ -3,6 +3,7 @@ import React from "react";
 // import './../styles.css';
 import Header from './../../Components/Header.js';
 import Footer from './../../Components/Footer.js';
+import Navigater from './../../Components/Navigater.js';
 
 import Kickstarter from './components/Kickstarter.js';
 import StartQuote from './components/StartQuote.js';
@@ -22,7 +23,7 @@ class HomePage extends React.Component {
       <div className="root-container-background" style={ style.homePageStyle }>
           <div style={{ background: 'linear-gradient(to bottom, rgb(0, 0, 60), rgb(0, 0, 0))' }}>
             <Header />
-            <StartQuote />
+            <Navigater />
             <Footer />
           </div>
       </div>
