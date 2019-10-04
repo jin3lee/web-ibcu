@@ -22,7 +22,6 @@ class HomePage extends React.Component {
       <div className="root-container-background" style={ style.homePageStyle }>
           <div style={{ background: 'linear-gradient(to bottom, rgb(0, 0, 60), rgb(0, 0, 0))' }}>
             <Header />
-            <Kickstarter />
             <StartQuote />
             <Footer />
           </div>
@@ -33,7 +32,7 @@ class HomePage extends React.Component {
 
 const style = {
   homePageStyle:{
-    backgroundColor: "#1A9AED",
+    backgroundColor: "white",
   },
 }
 export default HomePage;

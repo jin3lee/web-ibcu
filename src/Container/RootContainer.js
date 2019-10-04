@@ -26,7 +26,7 @@ class RootContainer extends React.Component {
 
 const style = {
   rootContainerStyle:{
-    backgroundColor: "#1A9AED",
+    backgroundColor: "white",
   },
 }
 

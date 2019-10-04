@@ -29,7 +29,7 @@ const style = {
     height: 90,
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: 'white'
+    backgroundColor: 'white',
   },
   logoStyle:{
     width: 80,
@@ -39,7 +39,7 @@ const style = {
   collegeNameStyle:{
     marginLeft: 20,
     fontFamily: "Avenir",
-    fontSize: '2em',
+    fontSize: '1.5em',
     color: "#0C54A3",
     textDecoration: 'none',
   },
