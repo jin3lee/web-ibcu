@@ -14,7 +14,7 @@ class Footer extends React.Component {
           </div>
 
 
-          <div style={{ fontSize: 15, marginTop: 25, fontSize: "1em", fontFamily: "Avenir", fontWeight: 'bold' }}>
+          <div style={{ marginTop: 25, fontSize: "1em", fontFamily: "Avenir", fontWeight: 'bold' }}>
             <hr
               style={{
                 color: "#0C54A3",
