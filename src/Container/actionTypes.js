@@ -1,6 +1,3 @@
 export const PAGE_ID_HOME = "PAGE_ID_HOME";
-export const PAGE_ID_SIGN_UP = "PAGE_ID_SIGN_UP";
-export const PAGE_ID_LOGIN_IN = "PAGE_ID_LOGIN_IN";
-export const PAGE_ID_ADMIN = "PAGE_ID_ADMIN";
+export const PAGE_ID_CAMPUS = "PAGE_ID_CAMPUS";
 export const UPDATE_PAGE = "UPDATE_PAGE";
-export const ADD_RANDOM_FISH_TANK_FEEDER = "ADD_RANDOM_FISH_TANK_FEEDER";
