@@ -7,15 +7,19 @@ class Navigater extends React.Component {
       <div style={{ backgroundColor: '#0C54A3' }}>
         <div style={ style.technicalContainer }>
             <a href="ibcuni.com" style={{ fontFamily: "Avenir", fontSize: '1.5em', textDecoration: 'none', color: 'white' }}>
-              About
+              ABOUT
             </a>
             <div style={{ fontSize: '1.5em', marginRight: 25, marginLeft: 25 }}>/</div>
             <a href="ibcuni.com" style={{ fontFamily: "Avenir", fontSize: '1.5em', textDecoration: 'none', color: 'white' }}>
-              Academics
+              ACADEMICS
             </a>
             <div style={{ fontSize: '1.5em', marginRight: 25, marginLeft: 25 }}>/</div>
             <a href="ibcuni.com" style={{ fontFamily: "Avenir", fontSize: '1.5em', textDecoration: 'none', color: 'white' }}>
-              Apply
+              APPLY
+            </a>
+            <div style={{ fontSize: '1.5em', marginRight: 25, marginLeft: 25 }}>/</div>
+            <a href="ibcuni.com" style={{ fontFamily: "Avenir", fontSize: '1.5em', textDecoration: 'none', color: 'white' }}>
+              CAMPUS
             </a>
         </div>
       </div>
