@@ -18,7 +18,16 @@ class ExperienceGallery extends React.Component {
             Hikes & Trails
           </div>
           <div style={{ backgroundColor:'#0C54A3', height: 10, width: 200, marginTop: 15 }} />
-          <div style={{ color: 'white', fontWeight: 'bold', fontSize: '1em', fontStyle: 'Italic', fontFamily: 'Avenir', height: 10, width: 300, marginTop: 25 }}>
+          <div style={{
+            color: 'white',
+            fontSize: '1em',
+            fontWeight: 'bold',
+            fontStyle: 'Italic',
+            fontFamily: 'Avenir',
+            backgroundColor: 'rgba(52, 67, 82, 0.4)',
+            width: 400,
+            marginTop: 25,
+          }}>
             The Lord said, “Go out and stand on the mountain in the presence of the Lord, for the Lord is about to pass by.” - 1 Kings 19:11
           </div>
         </div>
