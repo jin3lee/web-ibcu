@@ -4,7 +4,7 @@ import React from "react";
 import Header from './../../Components/Header.js';
 import Footer from './../../Components/Footer.js';
 import Navigater from './../../Components/Navigater/Navigater.js';
-import ExperienceGallery from './components/ExperienceGallery.js';
+import CampusAndTitle from './components/CampusAndTitle.js';
 
 class CampusPage extends React.Component {
 
@@ -14,6 +14,7 @@ class CampusPage extends React.Component {
           <div style={{ background: 'linear-gradient(to bottom, rgb(0, 0, 60), rgb(0, 0, 0))' }}>
             <Header />
             <Navigater />
+            <CampusAndTitle />
             <Footer />
           </div>
       </div>

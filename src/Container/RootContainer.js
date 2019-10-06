@@ -11,9 +11,11 @@ import { PAGE_ID_HOME, PAGE_ID_CAMPUS } from './actionTypes';
 import PageDimensions from './../Components/PageDimensions/PageDimensions.js';
 
 class RootContainer extends React.Component {
+
   render() {
 
-      console.log("pageId: ", this.props.pageId);
+    console.log("pageId: ", this.props.pageId);
+
     return(
       <div className="root-container-background" style={ style.rootContainerStyle }>
 

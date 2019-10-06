@@ -1,7 +1,7 @@
 import { PAGE_ID_HOME, PAGE_ID_CAMPUS } from "./actionTypes";
 
 const initialState = {
-	pageId: PAGE_ID_HOME,
+	pageId: PAGE_ID_CAMPUS,
 }
 
 export default function reducer( state = initialState, payload ) {
