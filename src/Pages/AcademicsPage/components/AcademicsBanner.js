@@ -9,7 +9,7 @@ class AcademicsBanner extends React.Component {
       <div style={ style.container }>
         <div style={{ marginLeft: '10%', display:'flex', alignItems: 'center' }}>
           <div style={{ fontSize: '3em', fontWeight: 'bold', color: 'white', textShadow: '-1px 1px 10px rgba(0, 0, 0, 0.75)' }}>
-            ACADEMICS AT ICBU
+            ACADEMICS AT IBCU
           </div>
         </div>
       </div>
