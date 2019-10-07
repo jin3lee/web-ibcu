@@ -6,7 +6,8 @@ import { connect } from 'react-redux';
 import HomePage from './../Pages/HomePage/HomePage.js';
 import CampusPage from './../Pages/CampusPage/CampusPage.js';
 import ApplyPage from './../Pages/ApplyPage/ApplyPage.js';
-import { PAGE_ID_HOME, PAGE_ID_CAMPUS, PAGE_ID_APPLY } from './actionTypes';
+import AboutPage from './../Pages/AboutPage/AboutPage.js';
+import { PAGE_ID_HOME, PAGE_ID_CAMPUS, PAGE_ID_APPLY, PAGE_ID_ABOUT } from './actionTypes';
 
 // listeners
 import PageDimensions from './../Components/PageDimensions/PageDimensions.js';
@@ -27,6 +28,8 @@ class RootContainer extends React.Component {
           { ( this.props.rootContainer.pageId === PAGE_ID_CAMPUS ) && <CampusPage /> }
 
           { ( this.props.rootContainer.pageId === PAGE_ID_APPLY ) && <ApplyPage /> }
+
+          { ( this.props.rootContainer.pageId === PAGE_ID_ABOUT ) && <AboutPage /> }
 
       </div>
     );
