@@ -15,6 +15,7 @@ class AcademicsPage extends React.Component {
             <Header />
             <Navigater />
             <AcademicsBanner />
+            <AcademicsContent />
             <Footer />
           </div>
       </div>

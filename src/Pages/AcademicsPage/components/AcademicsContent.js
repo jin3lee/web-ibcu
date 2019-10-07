@@ -5,7 +5,7 @@ import presidentImage from '../../../assets/staff/staff_r_kong.png';
 
 import { connect } from 'react-redux';
 import { updatePage } from '../../../Container/actions.js';
-import { PAGE_ID_HOME, PAGE_ID_APPLY } from '../../../Container/actionTypes.js'
+import { PAGE_ID_HOME, PAGE_ID_ACADEMICS } from '../../../Container/actionTypes.js'
 
 class AcademicsContent extends React.Component {
 
@@ -30,23 +30,53 @@ class AcademicsContent extends React.Component {
             <div style={ style.backFlowButtonStyle }>
               >
             </div>
-            <button onClick={ () => { this._updatePageTo( PAGE_ID_APPLY ) } } style={ style.backFlowButtonStyle }>
-              Apply
+            <button onClick={ () => { this._updatePageTo( PAGE_ID_ACADEMICS ) } } style={ style.backFlowButtonStyle }>
+              Academics
             </button>
           </div>
 
           <div style={{ display: 'flex', marginTop: '4%', fontFamily: 'Avenir' }}>
-          You will find that International Bible College and University is a great environment to
-          seek God, discover your own gifts, form your core values, and identify &amp; activate the
-          desires He built in you.
-          </div>
-          <br />
-          <div style={{ fontFamily: 'Avenir', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div>Step 1. To fill out the application download the form from the link below:</div>
-          </div>
-          <br />
-          <div style={{ fontFamily: 'Avenir', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <a href='https://ibcu-assets.s3-us-west-1.amazonaws.com/Application_Form_2019.docx' download>Click to download</a>
+            Grades will be monitored by each instructor and the administration. The grading scale is
+            determined by the instructor. Students continuously at a C average will receive an
+            academic warning from the administration and will be put on academic probation.
+            <br />
+            <br />
+            4.0 – 2.4 GPA (A – C+ average) Passing
+            <br />
+            2.3 – 1.4 GPA (C – D+ average) Warning and academic probation
+            <br />
+            1.3 or Lower GPA (D or lower) Termination of enrollment
+            <br /><br />
+            Grading Scale
+            <br /><br />
+            A 94 – 100% 4 grade points
+            <br />
+            A - 90 – 93% 3.7 grade points
+            <br />
+            B+ 87 – 89% 3.5 grade points
+            <br />
+            B 83 – 86% 3.3 grade points
+            <br />
+            B - 80 – 82% 3.0 grade points
+            <br />
+            C+ 77 – 79% 2.7 grade points
+            <br />
+            C 73 – 76% 2.3 grade points
+            <br />
+            C - 70 – 72% 2.0 grade points
+            <br />
+            D+ 67 – 69% 1.7 grade points
+            <br />
+            D 60 – 66% 1.3 grade points
+            <br />
+            F less than 60 0.0 grade points
+            <br /><br />
+            Grade Point Averages
+            <br /><br />
+            A Grade Point Average (GPA) is calculated for each student by multiplying the number of
+            credits for each course taken times the grade points for the assigned grade (see above).
+            The total grade points are then divided by the number of total credits. Courses having a
+            pass fail grade do not have grade points counted towards the student’s GPA.
           </div>
         </div>
 
