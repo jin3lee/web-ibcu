@@ -5,7 +5,7 @@ import Header from './../../Components/Header.js';
 import Footer from './../../Components/Footer.js';
 import Navigater from './../../Components/Navigater/Navigater.js';
 import AboutBanner from './components/AboutBanner.js';
-import ApplyContent from './components/ApplyContent.js';
+import AboutContent from './components/AboutContent.js';
 
 class AboutPage extends React.Component {
   render() {
@@ -15,6 +15,7 @@ class AboutPage extends React.Component {
             <Header />
             <Navigater />
             <AboutBanner />
+            <AboutContent />
             <Footer />
           </div>
       </div>

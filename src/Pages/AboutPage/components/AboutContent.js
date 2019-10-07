@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import { updatePage } from '../../../Container/actions.js';
 import { PAGE_ID_HOME, PAGE_ID_APPLY } from '../../../Container/actionTypes.js'
 
-class ApplyContent extends React.Component {
+class AboutContent extends React.Component {
 
   constructor( props ) {
     super( props );
@@ -35,18 +35,15 @@ class ApplyContent extends React.Component {
             </button>
           </div>
 
-          <div style={{ display: 'flex', marginTop: '4%', fontFamily: 'Avenir' }}>
-          You will find that International Bible College and University is a great environment to
-          seek God, discover your own gifts, form your core values, and identify &amp; activate the
-          desires He built in you.
-          </div>
-          <br />
-          <div style={{ fontFamily: 'Avenir', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div>Step 1. To fill out the application download the form from the link below:</div>
-          </div>
-          <br />
-          <div style={{ fontFamily: 'Avenir', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <a href='https://ibcu-assets.s3-us-west-1.amazonaws.com/Application_Form_2019.docx' download>Click to download</a>
+          <div style={{ marginTop: '4%' }}>Our Passion</div>
+          <div style={{ display: 'flex', marginTop: '3%', fontFamily: 'Avenir' }}>
+            Our primary passion at International Bible College and University is to build you up in
+            your faith and to equip you for ministry to others. We desire to present every man
+            complete in Christ (Colossians 1:28). We are training activators who are launching
+            globally, each one transforming others with revelation and wisdom. Computers,
+            communication technology, and methods are dynamic. Therefore, we will train you to
+            become His Light in this changing world with the unchanging Word of God, imparting
+            Jesus’ gifts, as we build churches in a global community together.
           </div>
         </div>
 
@@ -117,4 +114,4 @@ const mapStateToProps = (state, ownProps) => {
   };
 };
 
-export default connect( mapStateToProps )( ApplyContent );
+export default connect( mapStateToProps )( AboutContent );

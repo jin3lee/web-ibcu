@@ -34,19 +34,37 @@ class ApplyContent extends React.Component {
               Apply
             </button>
           </div>
-
-          <div style={{ display: 'flex', marginTop: '4%', fontFamily: 'Avenir' }}>
-          You will find that International Bible College and University is a great environment to
-          seek God, discover your own gifts, form your core values, and identify &amp; activate the
-          desires He built in you.
+          <div style={{ marginTop: '1%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>3 Things To Know Before Applying</div>
+          <br />
+          <b>1. Environment</b>
+          <div style={{ display: 'flex', marginTop: '1%', fontFamily: 'Avenir' }}>
+            You will find that International Bible College and University is a great environment to
+            seek God, discover your own gifts, form your core values, and identify &amp; activate the
+            desires He built in you.
+          </div>
+          <br />
+          <b>2. Emphasis on Internship</b>
+          <div style={{ display: 'flex', marginTop: '1%', fontFamily: 'Avenir' }}>
+            With all of the programs we offer, there is a strong emphasis on internship. This is your
+            opportunity for hands-on experience – you learn best by doing. We help give you that
+            opportunity in a wide variety of ministries, both urban and multi-cultural. You will also get
+            a chance to be involved in a broad spectrum of activities within those ministries.
+          </div>
+          <br />
+          <b>3. Please, ask God if this is for you!</b>
+          <div style={{ display: 'flex', marginTop: '1%', fontFamily: 'Avenir' }}>
+          Do you have a hunger for abiding presence of God? Is the cry of your heart to see God’s
+          Kingdom come, on earth as it is in Heaven? I would encourage you to pray, asking Jesus
+          if International Bible College and University is the next step for you! We will be happy to
+          welcome you to the family!
           </div>
           <br />
           <div style={{ fontFamily: 'Avenir', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div>Step 1. To fill out the application download the form from the link below:</div>
+            <div>If you are ready to apply, click the link below to download the application form:</div>
           </div>
           <br />
           <div style={{ fontFamily: 'Avenir', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <a href='https://ibcu-assets.s3-us-west-1.amazonaws.com/Application_Form_2019.docx' download>Click to download</a>
+            <a href='https://ibcu-assets.s3-us-west-1.amazonaws.com/Application_Form_2019.docx' download>Click Here to Download Application Form</a>
           </div>
         </div>
 
