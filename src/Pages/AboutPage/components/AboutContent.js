@@ -5,17 +5,38 @@ import presidentImage from '../../../assets/staff/staff_r_kong.png';
 
 import { connect } from 'react-redux';
 import { updatePage } from '../../../Container/actions.js';
-import { PAGE_ID_HOME, PAGE_ID_APPLY } from '../../../Container/actionTypes.js'
+import { PAGE_ID_HOME, PAGE_ID_ABOUT } from '../../../Container/actionTypes.js'
+
+
+const CONTENT_ID_PASSION = "CONTENT_ID_PASSION";
 
 class AboutContent extends React.Component {
 
   constructor( props ) {
     super( props );
+    this.state = {
+      currentContentById: CONTENT_ID_PASSION,
+    }
     this._updatePageTo = this._updatePageTo.bind(this);
   }
 
   _updatePageTo( pageId ) {
     this.props.dispatch( updatePage( pageId ) );
+  }
+
+  _getPassionContent = () => {
+    return <div>
+      <div style={{ marginTop: '4%' }}>Our Passion</div>
+      <div style={{ display: 'flex', marginTop: '3%', fontFamily: 'Avenir' }}>
+        Our primary passion at International Bible College and University is to build you up in
+        your faith and to equip you for ministry to others. We desire to present every man
+        complete in Christ (Colossians 1:28). We are training activators who are launching
+        globally, each one transforming others with revelation and wisdom. Computers,
+        communication technology, and methods are dynamic. Therefore, we will train you to
+        become His Light in this changing world with the unchanging Word of God, imparting
+        Jesus’ gifts, as we build churches in a global community together.
+      </div>
+    </div>
   }
 
   render() {
@@ -30,21 +51,12 @@ class AboutContent extends React.Component {
             <div style={ style.backFlowButtonStyle }>
               >
             </div>
-            <button onClick={ () => { this._updatePageTo( PAGE_ID_APPLY ) } } style={ style.backFlowButtonStyle }>
-              Apply
+            <button onClick={ () => { this._updatePageTo( PAGE_ID_ABOUT ) } } style={ style.backFlowButtonStyle }>
+              About
             </button>
           </div>
 
-          <div style={{ marginTop: '4%' }}>Our Passion</div>
-          <div style={{ display: 'flex', marginTop: '3%', fontFamily: 'Avenir' }}>
-            Our primary passion at International Bible College and University is to build you up in
-            your faith and to equip you for ministry to others. We desire to present every man
-            complete in Christ (Colossians 1:28). We are training activators who are launching
-            globally, each one transforming others with revelation and wisdom. Computers,
-            communication technology, and methods are dynamic. Therefore, we will train you to
-            become His Light in this changing world with the unchanging Word of God, imparting
-            Jesus’ gifts, as we build churches in a global community together.
-          </div>
+          { (this.state.currentContentById === CONTENT_ID_PASSION) && this._getPassionContent() }
         </div>
 
         <div style={{ flex: 2 }}>
