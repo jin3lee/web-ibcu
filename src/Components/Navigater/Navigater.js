@@ -1,7 +1,7 @@
 import React from "react";
 
 import { connect } from 'react-redux';
-import { PAGE_ID_HOME, PAGE_ID_CAMPUS } from './../../Container/actionTypes.js'
+import { PAGE_ID_HOME, PAGE_ID_CAMPUS, PAGE_ID_APPLY } from './../../Container/actionTypes.js'
 import { updatePage } from './../../Container/actions.js'
 
 class Navigater extends React.Component {
@@ -27,7 +27,7 @@ class Navigater extends React.Component {
               ACADEMICS
             </button>
             <div style={{ fontSize: '1.5em', marginRight: 25, marginLeft: 25 }}>/</div>
-            <button onClick={ () => { this._updatePageTo( PAGE_ID_CAMPUS ) } } style={ style.navButtonStyle }>
+            <button onClick={ () => { this._updatePageTo( PAGE_ID_APPLY ) } } style={ style.navButtonStyle }>
               APPLY
             </button>
             <div style={{ fontSize: '1.5em', marginRight: 25, marginLeft: 25 }}>/</div>

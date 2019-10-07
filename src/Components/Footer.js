@@ -5,14 +5,13 @@ class Footer extends React.Component {
   render() {
     return(
       <div style={ style.technicalContainer }>
-          <a href="ibcuni.com" style={{ fontFamily: "Avenir", fontSize: '1.5em', textDecoration: 'none', color: '#0C54A3' }}>
+          <a href="ibcuni.com" style={{ fontFamily: "Avenir", fontSize: '1em', textDecoration: 'none', color: '#0C54A3' }}>
             International Bible College & University
           </a>
 
           <div style={{ fontSize: 15, marginTop: 25, fontFamily: "Marker-Felt", fontWeight: 'bold' }}>
             PURSUE TRUTH & EXCELLENCE
           </div>
-
 
           <div style={{ marginTop: 25, fontSize: "1em", fontFamily: "Avenir", fontWeight: 'bold' }}>
             <hr
