@@ -1,7 +1,7 @@
-import { PAGE_ID_HOME, PAGE_ID_CAMPUS, PAGE_ID_APPLY, PAGE_ID_ABOUT } from "./actionTypes";
+import { PAGE_ID_HOME, PAGE_ID_CAMPUS, PAGE_ID_APPLY, PAGE_ID_ABOUT, PAGE_ID_ACADEMICS } from "./actionTypes";
 
 const initialState = {
-	pageId: PAGE_ID_ABOUT,
+	pageId: PAGE_ID_ACADEMICS,
 }
 
 export default function reducer( state = initialState, payload ) {
@@ -17,6 +17,9 @@ export default function reducer( state = initialState, payload ) {
 			return { ...state, pageId: payload.pageId };
 		}
 		case PAGE_ID_ABOUT: {
+			return { ...state, pageId: payload.pageId };
+		}
+		case PAGE_ID_ACADEMICS: {
 			return { ...state, pageId: payload.pageId };
 		}
     default: {
