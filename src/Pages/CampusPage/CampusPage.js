@@ -5,9 +5,9 @@ import Header from './../../Components/Header.js';
 import Footer from './../../Components/Footer.js';
 import Navigater from './../../Components/Navigater/Navigater.js';
 import CampusAndTitle from './components/CampusAndTitle.js';
+import CampusContent from './components/CampusContent.js';
 
 class CampusPage extends React.Component {
-
   render() {
     return(
       <div className="root-container-background" style={ style.homePageStyle }>
@@ -15,6 +15,7 @@ class CampusPage extends React.Component {
             <Header />
             <Navigater />
             <CampusAndTitle />
+            <CampusContent />
             <Footer />
           </div>
       </div>
