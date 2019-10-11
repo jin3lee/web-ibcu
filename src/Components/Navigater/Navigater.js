@@ -50,6 +50,7 @@ const style = {
     flexDirection: 'row',
     backgroundColor: '#0C54A3',
     marginLeft: '17%',
+    flexWrap: 'wrap'
   },
   navButtonStyle: {
     backgroundColor:'rgb(0,0,0,0)',
