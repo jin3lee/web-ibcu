@@ -12,7 +12,7 @@ class AcademicsContent extends React.Component {
   constructor( props ) {
     super( props );
     this.state = {
-      currentContentId: 4,
+      currentContentId: 5,
     };
     this._updatePageTo = this._updatePageTo.bind(this);
     this._updateContentTo = this._updateContentTo.bind(this);
@@ -279,6 +279,62 @@ class AcademicsContent extends React.Component {
   _getAdmissionAndApplicationContent() {
     return(<div>
             <h1>General Information</h1>
+            <h2>Application Process</h2>
+            A genuine “born again” experience is required for admission to International Bible
+            College and University in the bachelor, master and doctor level programs. Prospective
+            students must also be in agreement with our beliefs listed above under “What We
+            Believe”.
+            Applicants must have a diploma from a recognized high school (with a 2.0 average GPA)
+            or qualifying GED (General Education Diploma) for bachelor degree, bachelor degree for
+            master’s degree and master’s degree for doctor degree.
+            <h2>Certificate of Ministry (CM)</h2>
+            To begin application process, turn in application form with the application fee and all
+            other necessary documentation.
+            <h2>Bachelor of Ministry (BM)</h2>
+            To begin application process, turn in application form with the application fee and all
+            other necessary documentation including:<br />
+             Completed and signed Application for Admission<br />
+             One completed pastoral reference form<br />
+             One professional reference form (personal or other professional)<br />
+             Transcripts or official records that show student meets the above admission
+            requirements
+            <h2>Master of Ministry (MM) &amp; Master of Divinity (MDiv)</h2>
+            To begin the application process, turn in the application form with the application fee and
+            all other necessary documentation including:<br />
+             Completed and signed Application for Admission<br />
+             One completed pastoral reference form<br />
+             One professional reference form<br />
+             One personal reference form<br />
+             Transcripts or official records that show student meets the above admission
+            requirements<br />
+             Completed essay on the essay question listed on application, written or typed
+            in English on a separate paper – must include applicant’s full name on top<br />
+            <h2>Doctor of Ministry (DMin)</h2>
+            To begin application process, turn in the application form with the application fee and all
+            other necessary documentation including:<br /><br />
+            <b>Admission Requirements</b><br />
+             A Master of Divinity or its equivalent, or a Master of Arts of a theological
+            nature of at least 72 quarter units (48 semester units) from a religious
+            institution<br />
+             A ministerial leadership position – the DMin program is designed for ministry
+            leaders to continue to learn and grow without having to leave their ministry
+            context<br />
+             A minimum of three years ministerial leadership experience after receiving the
+            M.Div. or M.A. degree<br />
+             A grade point average of 3.0 or higher (3.0 on 4.0 scale)<br />
+             One course in biblical language NT Greek or OT Hebrew (This requirement
+            may be met through a course in the DMin program)<br /><br />
+            <b>Application Requirements</b><br />
+             Completed and signed Application for Admission<br />
+             One completed pastoral reference form<br />
+             One professional reference form<br />
+             One personal reference form<br />
+             Transcripts or official records that show student meets the above admission
+            requirements<br />
+             Completed essay on the essay question listed on application, written or typed
+            in English on a separate paper – must include applicant’s full name on top<br />
+             Doctor of Ministry applicants are required to submit a resume/record of at least
+            3 years of full-time ministry experience<br />
           </div>);
   }
   _getProgramDescriptionsContent() {
