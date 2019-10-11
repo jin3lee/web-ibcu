@@ -12,7 +12,7 @@ class AcademicsContent extends React.Component {
   constructor( props ) {
     super( props );
     this.state = {
-      currentContentId: 6,
+      currentContentId: 7,
     };
     this._updatePageTo = this._updatePageTo.bind(this);
     this._updateContentTo = this._updateContentTo.bind(this);
@@ -361,7 +361,183 @@ class AcademicsContent extends React.Component {
   }
   _getOutlineOfProgramsContent() {
     return(<div>
-            <h1>General Information</h1>
+            <h1>Outline of Programs</h1>
+            <h2>Bachelors of Ministry (BM, 4 years)</h2>
+            <h3>Year One Course Requirements:</h3>
+            PM 112 4 Foundations for Discovery*
+            <br />
+            PM 115 4 The Christian Life *
+            <br />
+            4 Kingdom Living/Equipped for Leadership (Spring)*
+            <br />
+            PM 4 Seminar/Conference
+            <br />
+            BI 4 one book of Bible
+            <br />
+            PG/PM 12 Credits
+            <br />
+            IN 12 Internship Credits: 4 Credits each quarter
+            <br />
+            ____________________________________________________
+            <br />
+            <b>Total: 48 Credits</b>
+            <br /><br /><br /><br />
+            <h3>Year Two Course Requirements:</h3>
+            TH 8 Survey of Theology
+            <br />
+            History of Pentecostal Movements
+            <br />
+            BI 12 Acts, Survey of the NT
+            <br />
+            PG 4 Church Leadership
+            <br />
+            PM 8 Electives
+            <br />
+            IN 16 Internship Credits
+            <br />
+            ____________________________________________________
+            <br />
+            <b>Total: 48 Credits</b>
+            <br /><br /><br /><br />
+            <h3>Year Three Course Requirements:</h3>
+            TH 8 Electives
+            <br />
+            BI 8 Electives
+            <br />
+            PM 4 Electives
+            <br />
+            IN 28 Internship 10 credits per quarter
+            <br />
+            ____________________________________________________
+            <br />
+            <b>Total: 48 Credits</b>
+            <br /><br /><br /><br />
+            <h3>Year Four Course Requirements:</h3>
+            TH 4 Electives
+            <br/>
+            BI 8 Electives
+            <br/>
+            PM 8 Electives
+            <br/>
+            IN 28 Electives
+            <br/>
+            ____________________________________________________
+            <br/>
+            <b>Total: 48 Credits</b>
+            <br/>
+            <b>Graduate Total: 192 Credits (Bachelors of Ministry achieved)</b>
+            <br/>
+            * Required Classes
+            <br/><br/><br/><br/>
+            <h2>Masters of Ministry (MM, 2 years)</h2>
+            <h3>Required Core Courses:</h3>
+            TH 501 4 Survey of Theology
+            <br />
+            TH 502 4 History of Pentecostal Movement
+            <br />
+            BI 501 4 New Testament Survey
+            <br />
+            PM 502 4 Bondage Breaking
+            <br />
+            TH 580 4 Systemic Theology
+            <br />
+            <h3>Your choice of concentration (52 Credits):</h3>
+            Global Leadership Concentration:
+            <br />
+            *Take leadership classes from PM 501, PM 504, PM 519, PM 520, PM 521, PM 522,
+            PM 523, PM 524, PM 570, PM 571.
+            <br />
+            *3 PG Elective courses
+            <br />
+            <br />
+            Christian Worship and Music Concentration:
+            <br />
+            *Take classes from PM 509, PM 515, PM 516, PM 519, PM 520, PM 521, PM 522,
+            PM 531 (I, II, III)
+            <br />
+            *3 PG Elective courses
+            <br />
+            <br />
+            Christian Counseling Concentration:
+            <br />
+            *Take leadership classes from PM 521, PM 526, PM 527, PM 528, PM 529, PM 530,
+            PM 541, PM 542, PM 543, PM 544.
+            <br />
+            *3 PG Elective courses
+            ____________________________________________________
+            <br />
+            <b>Total: 72 Credits</b> (Masters of Ministry achieved)
+            <br /><br /><br /><br />
+
+            <h2>Master of Divinity (MDiv,3 Years)</h2>
+            <h3>Required Core Courses: 108</h3>
+            BI 410 4 Greek I
+            <br />
+            BI 412 4 GreekII
+            <br />
+            BI 414 4 Hebrew I
+            <br />
+            BI 416 4 Hebrew II
+            <br />
+
+            <h3>Your Choice of Concentration (68 credits):</h3>
+            Global Leadership Concentration:
+            <br />
+            *Take leadership classes from PM 501, PM 504, PM 519, PM 520, PM 521, PM 522,
+            PM 523, PM 524, PM 570, PM 571.
+            <br />
+            *3 BI Elective courses
+            <br />
+            *3 TH Elective courses
+            <br />
+            *3 PM Elective courses
+            <br />
+            *4 PG Elective courses
+            <br /><br />
+            Christian Worship and Music Concentration:
+            <br />
+            *Take classes from PM 509, PM 515, PM 516, PM 519, PM 520, PM 521, PM 522,
+            PM 531 (I, II, III)
+            <br />
+            *3 BI Elective courses
+            <br />
+            *3 TH Elective courses
+            <br />
+            *3 PM Elective courses
+            <br />
+            *4 PG Elective courses
+            <br />
+            <br />
+            Christian Counseling Concentration:
+            <br />
+            *Take leadership classes from PM 521, PM 526, PM 527, PM 528, PM 529, PM 530,
+            PM 541, PM 542, PM 543, PM 544.
+            <br />
+            *3 BI Elective courses
+            <br />
+            *3 TH Elective courses
+            <br />
+            *3 PM Elective courses
+            <br />
+            *4 PG Elective courses
+            <br />
+            <h2>Doctor of Ministry (DMin, required minimum 3 years)</h2>
+            <br />
+            Required Core Courses:
+            <br />
+            TH 16 2 Theology Elective (800 course level above)
+            <br />
+            BI 16 2 Bible Elective (700 course level above)
+            <br />
+            PM 8 1 Practical Ministry Elective (from PM 874 or PM 876)
+            <br />
+            PM 711 2 Research Workshop
+            <br />
+            PM 720 6 Doctor’s Thesis
+            <br />
+            ____________________________________________________
+            <br />
+            <b>Total: 48 Credits</b> (Doctor of Ministry achieved)
           </div>);
   }
   _getCourseDescriptionsContent() {
