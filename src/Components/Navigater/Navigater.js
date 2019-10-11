@@ -1,7 +1,7 @@
 import React from "react";
 
 import { connect } from 'react-redux';
-import { PAGE_ID_HOME, PAGE_ID_CAMPUS, PAGE_ID_APPLY, PAGE_ID_ABOUT, PAGE_ID_ACADEMICS } from './../../Container/actionTypes.js'
+import { PAGE_ID_CAMPUS, PAGE_ID_APPLY, PAGE_ID_ABOUT, PAGE_ID_ACADEMICS } from './../../Container/actionTypes.js'
 import { updatePage } from './../../Container/actions.js'
 
 class Navigater extends React.Component {

@@ -1,4 +1,4 @@
-import { UPDATE_PAGE, PAGE_ID_CAMPUS, PAGE_ID_HOME } from "./actionTypes";
+import { UPDATE_PAGE } from "./actionTypes";
 
 export const updatePage = ( pageId ) => {
   return ({

@@ -1,6 +1,5 @@
 import React from "react";
 
-import campusImage from '../../../assets/campusImage.png';
 import presidentImage from '../../../assets/staff/staff_r_kong.png';
 
 import { connect } from 'react-redux';
@@ -76,7 +75,7 @@ class ApplyContent extends React.Component {
 
             <div style={{ display: 'flex', flexDirection: 'row' }}>
               <div style={{ flex: 1, display:'flex', justifyContent: 'center-left', alignItems: 'center' }}>
-                <img src={ presidentImage } style={{ width: 404/2.5, height: 433/2.5 }} />
+                <img alt="presidentFace" src={ presidentImage } style={{ width: 404/2.5, height: 433/2.5 }} />
               </div>
               <div style={{ flex: 1 }}>
                 <br />
