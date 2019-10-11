@@ -12,7 +12,7 @@ class AcademicsContent extends React.Component {
   constructor( props ) {
     super( props );
     this.state = {
-      currentContentId: -1,
+      currentContentId: 0,
     };
     this._updatePageTo = this._updatePageTo.bind(this);
     this._updateContentTo = this._updateContentTo.bind(this);
@@ -48,6 +48,26 @@ class AcademicsContent extends React.Component {
     </div>;
   }
 
+  _getAttendancePolicyContent(){
+    return(<div>
+      <h1>Attendance Policies</h1>
+      <h2>Attendance</h2>
+      Attendance is taken for all classes, chapels and intensives.
+      <h2>Certificate Program Attendance Policy:</h2>
+      3 Absences – Student receives warning from administration
+      <br />
+      4+ Absences – Student must complete supplemental homework from instructor
+      <br />
+      5+ Absences – Student eligible for termination from IBC&amp;U
+      <h3>Bachelor, Master, Doctorate Program Attendance Policy (per course):</h3>
+      2 absences – Student receives warning from administration
+      <br />
+      3+ absences – Student eligible for termination from IBC&amp;U
+      <br />
+      </div>
+    );
+  }
+
   render() {
     console.log("currentContentId: ", this.state.currentContentId);
     return(
@@ -66,6 +86,7 @@ class AcademicsContent extends React.Component {
           </div>
 
           { ( this.state.currentContentId == -1 ) && this._getAcademicMenu() }
+          { ( this.state.currentContentId == 0 ) && this._getAttendancePolicyContent() }
         </div>
 
         <div style={{ flex: 2 }}>
