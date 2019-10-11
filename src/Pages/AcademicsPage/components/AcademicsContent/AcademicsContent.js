@@ -12,7 +12,7 @@ class AcademicsContent extends React.Component {
   constructor( props ) {
     super( props );
     this.state = {
-      currentContentId: 0,
+      currentContentId: 1,
     };
     this._updatePageTo = this._updatePageTo.bind(this);
     this._updateContentTo = this._updateContentTo.bind(this);
@@ -68,6 +68,47 @@ class AcademicsContent extends React.Component {
     );
   }
 
+  _getAcademicPolicyContent() {
+    return(<div>
+      <h1>Academic Policies</h1>
+      <p>Grades will be monitored by each instructor and the administration. The grading scale is
+      determined by the instructor. Students continuously at a C average will receive an
+      academic warning from the administration and will be put on academic probation.</p>
+      <p>4.0 – 2.4 GPA (A – C+ average) Passing
+      <br />
+      2.3 – 1.4 GPA (C – D+ average) Warning and academic probation
+      <br />
+      1.3 or Lower GPA (D or lower) Termination of enrollment</p>
+      <h2>Grading Scale</h2>
+      A   94 – 100% 4 grade points
+      <br />
+      A-  90 – 93% 3.7 grade points
+      <br />
+      B+  87 – 89% 3.5 grade points
+      <br />
+      B   83 – 86% 3.3 grade points
+      <br />
+      B-  80 – 82% 3.0 grade points
+      <br />
+      C+  77 – 79% 2.7 grade points
+      <br />
+      C   73 – 76% 2.3 grade points
+      <br />
+      C-  70 – 72% 2.0 grade points
+      <br />
+      D+  67 – 69% 1.7 grade points
+      <br />
+      D   60 – 66% 1.3 grade points
+      <br />
+      F less than 60 0.0 grade points
+      <h2>Grade Point Averages</h2>
+      A Grade Point Average (GPA) is calculated for each student by multiplying the number of
+      credits for each course taken times the grade points for the assigned grade (see above).
+      The total grade points are then divided by the number of total credits. Courses having a
+      pass fail grade do not have grade points counted towards the student’s GPA.
+      </div>);
+  }
+
   _getCurentBackFlowButtonText() {
     switch( this.state.currentContentId ) {
       case -1:
@@ -120,6 +161,7 @@ class AcademicsContent extends React.Component {
 
           { ( this.state.currentContentId == -1 ) && this._getAcademicMenu() }
           { ( this.state.currentContentId == 0 ) && this._getAttendancePolicyContent() }
+          { ( this.state.currentContentId == 1 ) && this._getAcademicPolicyContent() }
         </div>
 
         <div style={{ flex: 2 }}>
