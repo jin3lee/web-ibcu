@@ -278,7 +278,7 @@ class AcademicsContent extends React.Component {
   }
   _getAdmissionAndApplicationContent() {
     return(<div>
-            <h1>General Information</h1>
+            <h1>Admission and Application</h1>
             <h2>Application Process</h2>
             A genuine “born again” experience is required for admission to International Bible
             College and University in the bachelor, master and doctor level programs. Prospective
