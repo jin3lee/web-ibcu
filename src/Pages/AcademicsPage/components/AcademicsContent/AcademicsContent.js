@@ -1,27 +1,57 @@
 import React from "react";
 
-import campusImage from '../../../assets/campusImage.png';
-import presidentImage from '../../../assets/staff/staff_r_kong.png';
+import campusImage from '../../../../assets/campusImage.png';
+import presidentImage from '../../../../assets/staff/staff_r_kong.png';
 
 import { connect } from 'react-redux';
-import { updatePage } from '../../../Container/actions.js';
-import { PAGE_ID_HOME, PAGE_ID_ACADEMICS } from '../../../Container/actionTypes.js'
+import { updatePage } from '../../../../Container/actions.js';
+import { PAGE_ID_HOME, PAGE_ID_ACADEMICS } from '../../../../Container/actionTypes.js'
 
 class AcademicsContent extends React.Component {
 
   constructor( props ) {
     super( props );
+    this.state = {
+      currentContentId: -1,
+    };
     this._updatePageTo = this._updatePageTo.bind(this);
+    this._updateContentTo = this._updateContentTo.bind(this);
   }
 
   _updatePageTo( pageId ) {
     this.props.dispatch( updatePage( pageId ) );
   }
 
+  _updateContentTo( contentId ) {
+    this.setState({ currentContentId: contentId });
+  }
+
+  _getAcademicMenu() {
+    return <div style={{  marginTop: '4%' }}>
+      <button onClick={ () => { this._updateContentTo(0) } } style={ style.hyperlinkStyle }>Attendance Policy</button>
+      <br /><br />
+      <button onClick={ () => { this._updateContentTo(1) } } style={ style.hyperlinkStyle }>Academic Policy</button>
+      <br /><br />
+      <button onClick={ () => { this._updateContentTo(2) } } style={ style.hyperlinkStyle }>Class Schedule</button>
+      <br /><br />
+      <button onClick={ () => { this._updateContentTo(3) } } style={ style.hyperlinkStyle }>Earning Credit</button>
+      <br /><br />
+      <button onClick={ () => { this._updateContentTo(4) } } style={ style.hyperlinkStyle }>General Information</button>
+      <br /><br />
+      <button onClick={ () => { this._updateContentTo(5) } } style={ style.hyperlinkStyle }>Admission and Application</button>
+      <br /><br />
+      <button onClick={ () => { this._updateContentTo(6) } } style={ style.hyperlinkStyle }>Program Descriptions</button>
+      <br /><br />
+      <button onClick={ () => { this._updateContentTo(7) } } style={ style.hyperlinkStyle }>Outline of Programs</button>
+      <br /><br />
+      <button onClick={ () => { this._updateContentTo(8) } } style={ style.hyperlinkStyle }>Course Descriptions</button>
+    </div>;
+  }
+
   render() {
+    console.log("currentContentId: ", this.state.currentContentId);
     return(
       <div style={ style.container }>
-
         <div style={{ flex: 3,  marginLeft: '10%', marginRight: '3%', marginTop: 30 }}>
           <div style={{ display: 'flex', flexDirection: 'row', color: 'rgb(90, 90, 90)' }}>
             <button onClick={ () => { this._updatePageTo( PAGE_ID_HOME ) } } style={ style.backFlowButtonStyle }>
@@ -30,54 +60,12 @@ class AcademicsContent extends React.Component {
             <div style={ style.backFlowButtonStyle }>
               >
             </div>
-            <button onClick={ () => { this._updatePageTo( PAGE_ID_ACADEMICS ) } } style={ style.backFlowButtonStyle }>
+            <button onClick={ () => { this._updateContentTo( -1 ) } } style={ style.backFlowButtonStyle }>
               Academics
             </button>
           </div>
 
-          <div style={{ display: 'flex', marginTop: '4%', fontFamily: 'Avenir' }}>
-            Grades will be monitored by each instructor and the administration. The grading scale is
-            determined by the instructor. Students continuously at a C average will receive an
-            academic warning from the administration and will be put on academic probation.
-            <br />
-            <br />
-            4.0 – 2.4 GPA (A – C+ average) Passing
-            <br />
-            2.3 – 1.4 GPA (C – D+ average) Warning and academic probation
-            <br />
-            1.3 or Lower GPA (D or lower) Termination of enrollment
-            <br /><br />
-            Grading Scale
-            <br /><br />
-            A 94 – 100% 4 grade points
-            <br />
-            A - 90 – 93% 3.7 grade points
-            <br />
-            B+ 87 – 89% 3.5 grade points
-            <br />
-            B 83 – 86% 3.3 grade points
-            <br />
-            B - 80 – 82% 3.0 grade points
-            <br />
-            C+ 77 – 79% 2.7 grade points
-            <br />
-            C 73 – 76% 2.3 grade points
-            <br />
-            C - 70 – 72% 2.0 grade points
-            <br />
-            D+ 67 – 69% 1.7 grade points
-            <br />
-            D 60 – 66% 1.3 grade points
-            <br />
-            F less than 60 0.0 grade points
-            <br /><br />
-            Grade Point Averages
-            <br /><br />
-            A Grade Point Average (GPA) is calculated for each student by multiplying the number of
-            credits for each course taken times the grade points for the assigned grade (see above).
-            The total grade points are then divided by the number of total credits. Courses having a
-            pass fail grade do not have grade points counted towards the student’s GPA.
-          </div>
+          { ( this.state.currentContentId == -1 ) && this._getAcademicMenu() }
         </div>
 
         <div style={{ flex: 2 }}>
@@ -138,6 +126,14 @@ const style = {
     border: "0px solid #000000",
     backgroundColor: 'rgb(0, 0, 0, 0)',
     fontWeight: 'bold',
+  },
+  hyperlinkStyle: {
+    backgroundColor: 'rgb(0, 0, 0, 0)',
+    border: "0px solid #000000",
+    fontFamily: 'Avenir',
+    color: '#0C54A3',
+    fontSize: 22,
+    textDecorationLine: 'underline',
   }
 }
 
