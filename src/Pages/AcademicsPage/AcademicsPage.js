@@ -5,7 +5,7 @@ import Header from './../../Components/Header.js';
 import Footer from './../../Components/Footer.js';
 import Navigater from './../../Components/Navigater/Navigater.js';
 import AcademicsBanner from './components/AcademicsBanner.js';
-import AcademicsContent from './components/AcademicsContent/AcademicsContent.js';
+import AcademicsContent from './components/AcademicsContent.js';
 
 class AcademicsPage extends React.Component {
   render() {

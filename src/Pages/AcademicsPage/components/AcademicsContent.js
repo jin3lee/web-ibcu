@@ -1,10 +1,10 @@
 import React from "react";
 
-import presidentImage from '../../../../assets/staff/staff_r_kong.png';
+import presidentImage from '../../../assets/staff/staff_r_kong.png';
 
 import { connect } from 'react-redux';
-import { updatePage } from '../../../../Container/actions.js';
-import { PAGE_ID_HOME } from '../../../../Container/actionTypes.js'
+import { updatePage } from '../../../Container/actions.js';
+import { PAGE_ID_HOME } from '../../../Container/actionTypes.js'
 
 class AcademicsContent extends React.Component {
 
@@ -471,6 +471,7 @@ class AcademicsContent extends React.Component {
             PM 541, PM 542, PM 543, PM 544.
             <br />
             *3 PG Elective courses
+            <br />
             ____________________________________________________
             <br />
             <b>Total: 72 Credits</b> (Masters of Ministry achieved)
@@ -1151,7 +1152,7 @@ class AcademicsContent extends React.Component {
   render() {
     return(
       <div style={ style.container }>
-        <div style={{ flex: 3,  marginLeft: '10%', marginRight: '3%', marginTop: 30 }}>
+        <div style={{ width: 550,  marginLeft: '10%', marginRight: '3%', marginTop: 30 }}>
           <div style={{ display: 'flex', flexDirection: 'row', color: 'rgb(90, 90, 90)' }}>
             <button onClick={ () => { this._updatePageTo( PAGE_ID_HOME ) } } style={ style.backFlowButtonStyle }>
               Home
@@ -1182,9 +1183,12 @@ class AcademicsContent extends React.Component {
           { ( this.state.currentContentId === 6 ) && this._getProgramDescriptionsContent() }
           { ( this.state.currentContentId === 7 ) && this._getOutlineOfProgramsContent() }
           { ( this.state.currentContentId === 8 ) && this._getCourseDescriptionsContent() }
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <hr />
+          <br />
         </div>
 
-        <div style={{ flex: 2 }}>
+        <div style={{ width: 550 }}>
           <div style={{ marginRight: '10%', marginTop: 30, fontWeight: 'bold' }}>
             Message from the President
           </div>
@@ -1235,6 +1239,7 @@ const style = {
     flexDirection: 'row',
     backgroundColor: 'white',
     justifyContent: 'center',
+    flexWrap: 'wrap'
   },
   backFlowButtonStyle: {
     marginRight: 10,
