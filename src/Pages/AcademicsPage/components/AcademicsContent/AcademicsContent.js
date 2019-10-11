@@ -12,7 +12,7 @@ class AcademicsContent extends React.Component {
   constructor( props ) {
     super( props );
     this.state = {
-      currentContentId: 2,
+      currentContentId: 4,
     };
     this._updatePageTo = this._updatePageTo.bind(this);
     this._updateContentTo = this._updateContentTo.bind(this);
@@ -24,6 +24,31 @@ class AcademicsContent extends React.Component {
 
   _updateContentTo( contentId ) {
     this.setState({ currentContentId: contentId });
+  }
+
+  _getCurentBackFlowButtonText() {
+    switch( this.state.currentContentId ) {
+      case -1:
+        break;
+      case 0:
+        return "Attendance Policy";
+      case 1:
+        return "Academic Policy";
+      case 2:
+        return "Class Schedule";
+      case 3:
+        return "Earning Credit";
+      case 4:
+        return "General Information";
+      case 5:
+        return "Admission and Application";
+      case 6:
+        return "Program Descriptions";
+      case 7:
+        return "Outline of Programs";
+      case 8:
+        return "Course Descriptions";
+    }
   }
 
   _getAcademicMenu() {
@@ -67,7 +92,6 @@ class AcademicsContent extends React.Component {
       </div>
     );
   }
-
   _getAcademicPolicyContent() {
     return(<div>
       <h1>Academic Policies</h1>
@@ -108,7 +132,6 @@ class AcademicsContent extends React.Component {
       pass fail grade do not have grade points counted towards the student’s GPA.
       </div>);
   }
-
   _getClassScheduleContent() {
     return(<div>
             <h1>Class Schedules</h1>
@@ -171,30 +194,107 @@ class AcademicsContent extends React.Component {
             Due to the nature of the internship program, internship credits must be earned from an
             approved IBC&amp;U program. In most cases, internship credits will not transfer.</div>);
   }
+  _getEarningCreditContent() {
+    return(<div>
+            <h1>Earning Credit</h1>
+            <h2>Academic Classes</h2>
+            These are the core of our programs and courses offered at the school. The normal class
+            load is to take four 4 credit classes per quarter for bachelor programs. Master program
+            students generally take three 4 credit classes per quarter. As described in the class
+            schedule section, academic classes are held at various times during the week and,
+            occasionally, weekend seminars and multi-day intensives will be offered (see previous
+            section in Catalog for schedule).
+            <h2>Internship Program</h2>
+            The internship program is a core piece of IBC&amp;U. Placement into various departments is
+            handled on a case by case basis after meeting and reviewing with school staff. Students
+            are placed under an internship mentor who has an established relationship with the
+            school. During the quarter, the mentor will turn in a “review slip” relating to the student
+            and his/her performance, attendance, and activities. Periodically, during the quarter, the
+            student will meet with school staff to review how the student is doing in the area he/she is
+            involved in.
+            <br /><br />
+            A normal load for the internship program is one, 4 credit course for every quarter. Each
+            student will be required to serve a minimum of 4 hours per week to receive a passing
+            grade for the course. During the senior year of our bachelors program, the internship
+            requirements are increased while the academic course load is decreased (see section on
+            programs offered).
+          </div>);
+  }
+  _getGeneralInformationContent() {
+    return(<div>
+            <h1>General Information</h1>
+            <h2>Financial Information</h2>
+            Application Fee: $50<br />
+            Foreign Student Processing Fee: $100<br />
+            Certificate of Ministry: $132/credit<br />
+            Bachelor of Ministry: $132/credit<br />
+            Master of Ministry and Master of Divinity: $165/credit<br />
+            Doctor of Ministry $200<br />
+            Official Transcript: $15<br />
 
-  _getCurentBackFlowButtonText() {
-    switch( this.state.currentContentId ) {
-      case -1:
-        break;
-      case 0:
-        return "Attendance Policy";
-      case 1:
-        return "Academic Policy";
-      case 2:
-        return "Class Schedule";
-      case 3:
-        return "Earning Credit";
-      case 4:
-        return "General Information";
-      case 5:
-        return "Admission and Application";
-      case 6:
-        return "Program Descriptions";
-      case 7:
-        return "Outline of Programs";
-      case 8:
-        return "Course Descriptions";
-    }
+            <h2>Tuition Payment</h2>
+            International Bible College and University accepts cash, personal checks from a U.S.
+            bank, money orders, and international wire transfers. Credit and debit cards are accepted
+            when payment is given in person. Credit and debit cards are not accepted over the
+            phone or online for security reasons. Please request additional information from the
+            office for international wire transfers.
+            <h2>New Students</h2>
+            Tuition payment is required on Orientation Day before the start of the quarter.
+            <h2>Returning Students</h2>
+            Tuition payment is due on Registration Day for the upcoming quarter.
+            <h2>Late Fee</h2>
+            A fee of $200 will be added to the cost of tuition if payment is not received on the due
+            date. Students are not permitted to attend class until tuition payment is completed.
+            <h2>Withdrawal</h2>
+            Students withdrawing from the school must complete a withdrawal form. Until this
+            withdrawal form has been completed and submitted, students will continue to be
+            financially responsible for ongoing tuition.
+            Students withdrawing from a class must submit an official withdrawal form prior to four
+            weeks before the last day of class. If a course is dropped in the last 4 weeks of the
+            quarter, they will receive a failing grade.
+            <h2>Scholarships</h2>
+            International Bible College and University awards scholarships of 20% to 50% off tuition
+            costs to ministers, pastors and missionaries. Scholarships are offered after each
+            applicant is reviewed by school staff. If a student is interested in receiving a ministerial
+            tuition discount, he/she must contact the school office prior to the time of registration.
+            <h2>Tuition Refund Policy</h2>
+            Students who withdraw from one, or all, of their courses receive the stated tuition refund
+            percentage below. This refund will be based on the date the official withdrawal form is
+            returned to and approved by the administration. Only tuition is refundable. Fees are non-
+            refundable.
+            <br /><br />
+            Time of withdrawal Percentage Refunded<br />
+            During Open Registration 100%<br />
+            First week of quarter 80%<br />
+            Second week of quarter 60%<br />
+            Third week of quarter 40%<br />
+            Fourth week of quarter 20%<br />
+            After fourth week 0%
+            <h2>Transferring Out</h2>
+            Students transferring out from the IBC&amp;U to another school must complete the transfer
+            process no later than the first day of the subsequent quarter. Students may not transfer
+            out after the first day of the quarter.
+          </div>);
+  }
+  _getAdmissionAndApplicationContent() {
+    return(<div>
+            <h1>General Information</h1>
+          </div>);
+  }
+  _getProgramDescriptionsContent() {
+    return(<div>
+            <h1>General Information</h1>
+          </div>);
+  }
+  _getOutlineOfProgramsContent() {
+    return(<div>
+            <h1>General Information</h1>
+          </div>);
+  }
+  _getCourseDescriptionsContent() {
+    return(<div>
+            <h1>General Information</h1>
+          </div>);
   }
 
   render() {
@@ -226,6 +326,12 @@ class AcademicsContent extends React.Component {
           { ( this.state.currentContentId == 0 ) && this._getAttendancePolicyContent() }
           { ( this.state.currentContentId == 1 ) && this._getAcademicPolicyContent() }
           { ( this.state.currentContentId == 2 ) && this._getClassScheduleContent() }
+          { ( this.state.currentContentId == 3 ) && this._getEarningCreditContent() }
+          { ( this.state.currentContentId == 4 ) && this._getGeneralInformationContent() }
+          { ( this.state.currentContentId == 5 ) && this._getAdmissionAndApplicationContent() }
+          { ( this.state.currentContentId == 6 ) && this._getProgramDescriptionsContent() }
+          { ( this.state.currentContentId == 7 ) && this._getOutlineOfProgramsContent() }
+          { ( this.state.currentContentId == 8 ) && this._getCourseDescriptionsContent() }
         </div>
 
         <div style={{ flex: 2 }}>
