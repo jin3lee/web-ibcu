@@ -12,7 +12,7 @@ class AcademicsContent extends React.Component {
   constructor( props ) {
     super( props );
     this.state = {
-      currentContentId: 1,
+      currentContentId: 2,
     };
     this._updatePageTo = this._updatePageTo.bind(this);
     this._updateContentTo = this._updateContentTo.bind(this);
@@ -109,6 +109,69 @@ class AcademicsContent extends React.Component {
       </div>);
   }
 
+  _getClassScheduleContent() {
+    return(<div>
+            <h1>Class Schedules</h1>
+            Note: Course schedules listed below are subject to change. Check registration
+            information for exact times and dates for each course including seminars and intensives.
+            <h2>Classes</h2>
+            Most class offerings are 4 credit classes taken once a week per class. The schedule for
+            each class varies for each quarter and may be offered in the morning, afternoon, or
+            evening. If the student takes online courses, the required number of hours online is the
+            same as the in-class participating hours.
+            <h2>Seminars</h2>
+            Seminars are typically 2 credits for two days of intensive learning. The schedule for the
+            seminars is as follows:
+            <br />
+            Friday: 7:00pm-9:00pm
+            <br />
+            Saturday: 9:00am-12:00pm
+            <br />
+            1:00pm-5:00pm
+            <br />
+            7:00pm-9:00pm
+
+            <h2>Intensives</h2>
+            Intensives are 4 credits with book reading and paper writing. The schedule for intensives
+            is as follows:
+            <br />
+            Friday: 6:00pm-9:00pm
+            <br />
+            Monday/Tuesday/Saturday: 9:00am-5:00pm
+            <h2>Course Loads</h2>
+            A full time student takes 12 credits per quarter in the Master of Ministry and Master of
+            Divinity program. All students in the Certificate of Ministry and Bachelor of Ministry
+            programs must take 16 credits to be considered full-time. To be a full time student in
+            Doctor of Ministry it takes 16 credits per year. Any less is considered a part-time student.
+            <h2>Clock Hour Calculations</h2>
+            International Bible College and University has adopted the standard credit hour
+            calculation for the quarter system. A quarter unit is equivalent to 50 minutes of classroom
+            time per week over a ten week quarter.
+            <h2>Academic Advisement</h2>
+            At the time of initial enrollment, and during enrollment for every subsequent quarter,
+            students will fill out a registration form. This form must be reviewed and signed by the
+            school staff before the student can complete registration for that quarter. This is to
+            ensure that program requirements are being followed and the needs of the student are
+            being met.
+
+            15
+
+            <h2>Internship Courses</h2>
+            These courses are pass/fail which is decided by attendance and performance reviews
+            made by internship mentors and school staff.
+            <h2>Transfer of Credits</h2>
+            IBC&amp;U will allow transfer of some college level credits. Students who wish to transfer
+            credits will need to have official sealed transcripts sent to the office for review. Credits
+            will be considered for transfer from a recognized educational institution of higher learning
+            provided the student has received a 2.0 or better grade on courses.
+            Credits that relate specifically to our academic classes will be accepted on a case by
+            case basis upon review of institution catalogue and courses from the other school.
+            Some credits are available for life-experiences. Each is considered on a case by case
+            basis.
+            Due to the nature of the internship program, internship credits must be earned from an
+            approved IBC&amp;U program. In most cases, internship credits will not transfer.</div>);
+  }
+
   _getCurentBackFlowButtonText() {
     switch( this.state.currentContentId ) {
       case -1:
@@ -162,6 +225,7 @@ class AcademicsContent extends React.Component {
           { ( this.state.currentContentId == -1 ) && this._getAcademicMenu() }
           { ( this.state.currentContentId == 0 ) && this._getAttendancePolicyContent() }
           { ( this.state.currentContentId == 1 ) && this._getAcademicPolicyContent() }
+          { ( this.state.currentContentId == 2 ) && this._getClassScheduleContent() }
         </div>
 
         <div style={{ flex: 2 }}>
