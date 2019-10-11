@@ -12,7 +12,7 @@ class AcademicsContent extends React.Component {
   constructor( props ) {
     super( props );
     this.state = {
-      currentContentId: 5,
+      currentContentId: 6,
     };
     this._updatePageTo = this._updatePageTo.bind(this);
     this._updateContentTo = this._updateContentTo.bind(this);
@@ -176,9 +176,6 @@ class AcademicsContent extends React.Component {
             school staff before the student can complete registration for that quarter. This is to
             ensure that program requirements are being followed and the needs of the student are
             being met.
-
-            15
-
             <h2>Internship Courses</h2>
             These courses are pass/fail which is decided by attendance and performance reviews
             made by internship mentors and school staff.
@@ -339,7 +336,27 @@ class AcademicsContent extends React.Component {
   }
   _getProgramDescriptionsContent() {
     return(<div>
-            <h1>General Information</h1>
+            <h1>Program Descriptions</h1>
+            Course Codes Courses at International Bible College and University are broken up
+            into 6 main categories with a specified amount of credits required in each category
+            (see below):<br /><br />
+            <b>TH</b> – Theology: courses dealing with specific theological issues (i.e. Survey
+            of Theology)
+            <br /><br />
+            <b>BI</b> – Bible: courses dealing with specific books of the bible, or sections of
+            scripture (i.e. Gospel of John)
+            <br /><br />
+            <b>PM</b> – Practical Ministry: courses dealing with some of the more detailed
+            specifics of ministry, main focus of these classes is dealing with others (i.e.
+            Bondage Breaking)
+            <br /><br />
+            <b>PG</b> – Personal Growth: courses dealing with personal issues, main focus of
+            these classes is dealing with self (i.e. Bible Study Methods; Knowing My
+            Gifts)
+            <br /><br />
+            <b>IN</b> – Internship Courses: when enrolled in an internship course, the focus is
+            learning by doing, “hands on” ministry (e.g. involvement with Worship
+            Team; Healing Rooms; Bible Study; Youth Group; Missions Team)
           </div>);
   }
   _getOutlineOfProgramsContent() {
