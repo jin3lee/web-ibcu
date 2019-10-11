@@ -11,8 +11,8 @@ class AcademicsContent extends React.Component {
   constructor( props ) {
     super( props );
     this.state = {
-      currentContentId: 8,
-      currentCourseDescriptionContentId: 4,
+      currentContentId: -1,
+      currentCourseDescriptionContentId: -1,
     };
     this._updatePageTo = this._updatePageTo.bind(this);
     this._updateContentTo = this._updateContentTo.bind(this);
@@ -1192,7 +1192,7 @@ class AcademicsContent extends React.Component {
 
             <div style={{ display: 'flex', flexDirection: 'row' }}>
               <div style={{ flex: 1, display:'flex', justifyContent: 'center-left', alignItems: 'center' }}>
-                <img src={ presidentImage } style={{ width: 404/2.5, height: 433/2.5 }} />
+                <img alt="presidentFace" src={ presidentImage } style={{ width: 404/2.5, height: 433/2.5 }} />
               </div>
               <div style={{ flex: 1 }}>
                 <br />

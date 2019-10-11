@@ -24,8 +24,6 @@ class RootContainer extends React.Component {
 
   render() {
 
-    console.log("pageId: ", this.props.pageId);
-
     return(
       <div className="root-container-background" style={ style.rootContainerStyle }>
 
