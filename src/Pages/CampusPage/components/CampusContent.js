@@ -19,7 +19,7 @@ class CampusContent extends React.Component {
     return(
       <div style={ style.container }>
 
-        <div style={{ flex: 3,  marginLeft: '10%', marginRight: '3%', marginTop: 30 }}>
+        <div style={{ width: 400,marginLeft: '10%', marginTop: 30 }}>
           <div style={{ display: 'flex', flexDirection: 'row', color: 'rgb(90, 90, 90)' }}>
             <button onClick={ () => { this._updatePageTo( PAGE_ID_HOME ) } } style={ style.backFlowButtonStyle }>
               Home
@@ -49,11 +49,11 @@ class CampusContent extends React.Component {
           </div>
         </div>
 
-        <div style={{ flex: 2, marginRight: '10%', marginTop: 30 }}>
+        <div style={{ width: 400, marginTop: 30, marginLeft: '10%', }}>
           <iframe title="googleMap"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6697121.489565031!2d-125.5861898306647!3d47.181521985669114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905829e2a85e45%3A0xc1e6e622ab680455!2s32008%2032nd%20Ave%20S%2C%20Federal%20Way%2C%20WA%2098001!5e0!3m2!1sen!2sus!4v1570425289678!5m2!1sen!2sus"
-          width="600"
-          height="450"
+          width="400"
+          height="400"
           frameBorder="0"
           style={{ border:"0" }}
           allowFullScreen=""></iframe>
@@ -69,7 +69,8 @@ const style = {
     display: 'flex',
     flexDirection: 'row',
     backgroundColor: 'white',
-    justifyContent: 'center',
+    flexWrap: 'wrap',
+    justifyContent: 'center'
   },
   backFlowButtonStyle: {
     marginRight: 10,
