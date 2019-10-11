@@ -48,7 +48,7 @@ class AcademicsContent extends React.Component {
     </div>;
   }
 
-  _getAttendancePolicyContent(){
+  _getAttendancePolicyContent() {
     return(<div>
       <h1>Attendance Policies</h1>
       <h2>Attendance</h2>
@@ -68,6 +68,31 @@ class AcademicsContent extends React.Component {
     );
   }
 
+  _getCurentBackFlowButtonText() {
+    switch( this.state.currentContentId ) {
+      case -1:
+        break;
+      case 0:
+        return "Attendance Policy";
+      case 1:
+        return "Academic Policy";
+      case 2:
+        return "Class Schedule";
+      case 3:
+        return "Earning Credit";
+      case 4:
+        return "General Information";
+      case 5:
+        return "Admission and Application";
+      case 6:
+        return "Program Descriptions";
+      case 7:
+        return "Outline of Programs";
+      case 8:
+        return "Course Descriptions";
+    }
+  }
+
   render() {
     console.log("currentContentId: ", this.state.currentContentId);
     return(
@@ -82,6 +107,14 @@ class AcademicsContent extends React.Component {
             </div>
             <button onClick={ () => { this._updateContentTo( -1 ) } } style={ style.backFlowButtonStyle }>
               Academics
+            </button>
+            {
+              (this.state.currentContentId !== -1) && <div style={ style.backFlowButtonStyle }>
+                >
+              </div>
+            }
+            <button onClick={ () => { this._updateContentTo( -1 ) } } style={ style.backFlowButtonStyle }>
+              { this._getCurentBackFlowButtonText() }
             </button>
           </div>
 
