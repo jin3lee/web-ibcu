@@ -11,7 +11,7 @@ class AcademicsContent extends React.Component {
   constructor( props ) {
     super( props );
     this.state = {
-      currentContentId: -1,
+      currentContentId: 7,
       currentCourseDescriptionContentId: -1,
     };
     this._updatePageTo = this._updatePageTo.bind(this);
@@ -56,6 +56,14 @@ class AcademicsContent extends React.Component {
       default:
         return "default";
     }
+  }
+
+  _spaces = (numberOfSpaces) => {
+    var spaces = "";
+    for( var i = 0; i < numberOfSpaces; i++ ) {
+      spaces += ".";
+    }
+    return(<a style={{ color:'rgb( 0, 0, 0, 0 )' }}>{ spaces }</a>);
   }
 
   _getAcademicMenu() {
@@ -369,6 +377,33 @@ class AcademicsContent extends React.Component {
   _getOutlineOfProgramsContent() {
     return(<div>
             <h1>Outline of Programs</h1>
+            <b>Programs</b>
+            <br />
+            International Bible College and University offers the following programs:
+            <br />
+            { this._spaces(4) } &#8226;{ this._spaces(4) } Certificate of Ministry (CM, one year bible study program)
+            <br />
+            { this._spaces(4) } &#8226;{ this._spaces(4) } Bachelor of Ministry (BM, four year program)
+            <br />
+            { this._spaces(4) } &#8226;{ this._spaces(4) } Master of Ministry (MM, two years program)
+            <br />
+            { this._spaces(4) } &#8226;{ this._spaces(4) } Master of Divinity (MDiv, three years program)
+            <br />
+            { this._spaces(4) } &#8226;{ this._spaces(4) } Doctor of Ministry (DMin, minimum 3 years)
+            <br /><br />
+            Details of each program are outlined below:
+            <h2>Certificate of Ministry (CM, 1 year)</h2>
+            *Courses taken in the Certificate of Ministry are preparatory in nature. Credits are not transferable
+            into upper degree programs.
+            <br />
+            *CM program takes each quarter 16 credits as below and each student must take 2 Bible electives,
+            1 PM or PG elective, and 1 PM or TH elective course per quarter.
+            <br /><br /><br />
+            BI{ this._spaces(12) }8{ this._spaces(10) }2{ this._spaces(2) }Bible Electives<br />
+            PM/PG{ this._spaces(4) }4{ this._spaces(10) }1{ this._spaces(2) }PM or PG Elective<br />
+            PM/TH{ this._spaces(4) }4{ this._spaces(10) }1{ this._spaces(2) }PM or TH Elective<br />
+            ____________________________________________________<br />
+            <b>Total:{ this._spaces(5) }16 Credits * 3 Quarters = 48 Credits (Certificate achieved)</b><br />
             <h2>Bachelors of Ministry (BM, 4 years)</h2>
             <h3>Year One Course Requirements:</h3>
             PM 112 4 Foundations for Discovery*
