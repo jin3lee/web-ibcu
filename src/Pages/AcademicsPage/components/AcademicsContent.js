@@ -11,7 +11,7 @@ class AcademicsContent extends React.Component {
   constructor( props ) {
     super( props );
     this.state = {
-      currentContentId: 7,
+      currentContentId: -1,
       currentCourseDescriptionContentId: -1,
     };
     this._updatePageTo = this._updatePageTo.bind(this);
@@ -432,63 +432,65 @@ class AcademicsContent extends React.Component {
             <b>Total:{ this._spaces(5) }48 Credits</b>
             <br /><br /><br /><br />
             <h3>Year Two Course Requirements:</h3>
-            TH 8 Survey of Theology
+            TH{ this._spaces(10) }8{ this._spaces(10) }Survey of Theology
             <br />
-            History of Pentecostal Movements
+            { this._spaces(27) }History of Pentecostal Movements
             <br />
-            BI 12 Acts, Survey of the NT
+            BI{ this._spaces(10) }12{ this._spaces(10) }Acts, Survey of the NT
             <br />
-            PG 4 Church Leadership
+            PG{ this._spaces(10) }4{ this._spaces(10) }Church Leadership
             <br />
-            PM 8 Electives
+            PM{ this._spaces(10) }8{ this._spaces(10) }Electives
             <br />
-            IN 16 Internship Credits
+            IN{ this._spaces(10) }16{ this._spaces(10) }Internship Credits
             <br />
             ____________________________________________________
             <br />
-            <b>Total: 48 Credits</b>
+            <b>Total:{ this._spaces(3) }48 Credits</b>
             <br /><br /><br /><br />
             <h3>Year Three Course Requirements:</h3>
-            TH 8 Electives
+            TH{ this._spaces(10) }8{ this._spaces(10) }Electives
             <br />
-            BI 8 Electives
+            BI{ this._spaces(12) }8{ this._spaces(10) }Electives
             <br />
-            PM 4 Electives
+            PM{ this._spaces(10) }4{ this._spaces(10) }Electives
             <br />
-            IN 28 Internship 10 credits per quarter
+            IN{ this._spaces(11) }28{ this._spaces(8) }Internship 10 credits per quarter
             <br />
             ____________________________________________________
             <br />
-            <b>Total: 48 Credits</b>
+            <b>Total:{ this._spaces(4) }48 Credits</b>
             <br /><br /><br /><br />
             <h3>Year Four Course Requirements:</h3>
-            TH 4 Electives
+            TH{ this._spaces(10) }4{ this._spaces(10) }Electives
             <br/>
-            BI 8 Electives
+            BI{ this._spaces(12) }8{ this._spaces(10) }Electives
             <br/>
-            PM 8 Electives
+            PM{ this._spaces(10) }8{ this._spaces(10) }Electives
             <br/>
-            IN 28 Electives
+            IN{ this._spaces(12) }28{ this._spaces(8) }Electives
             <br/>
             ____________________________________________________
             <br/>
             <b>Total: 48 Credits</b>
-            <br/>
+            <br/><br/>
             <b>Graduate Total: 192 Credits (Bachelors of Ministry achieved)</b>
+            <br />
             <br/>
             * Required Classes
             <br/><br/><br/><br/>
             <h2>Masters of Ministry (MM, 2 years)</h2>
             <h3>Required Core Courses:</h3>
-            TH 501 4 Survey of Theology
+            TH 501{ this._spaces(5) }4{ this._spaces(10) }Survey of Theology
             <br />
-            TH 502 4 History of Pentecostal Movement
+            TH 502{ this._spaces(4) }4{ this._spaces(10) }History of Pentecostal Movement
             <br />
-            BI 501 4 New Testament Survey
+            BI 501{ this._spaces(6) }4{ this._spaces(10) }New Testament Survey
             <br />
-            PM 502 4 Bondage Breaking
+            PM 502{ this._spaces(4) }4{ this._spaces(10) }Bondage Breaking
             <br />
-            TH 580 4 Systemic Theology
+            TH 580{ this._spaces(4) }4{ this._spaces(10) }Systemic Theology
+            <br />
             <br />
             <h3>Your choice of concentration (52 Credits):</h3>
             Global Leadership Concentration:
@@ -521,17 +523,17 @@ class AcademicsContent extends React.Component {
 
             <h2>Master of Divinity (MDiv,3 Years)</h2>
             <h3>Required Core Courses: 108</h3>
-            BI 410 4 Greek I
+            BI 410{ this._spaces(4) }4{ this._spaces(8) }Greek I
             <br />
-            BI 412 4 GreekII
+            BI 412{ this._spaces(4) }4{ this._spaces(8) }GreekII
             <br />
-            BI 414 4 Hebrew I
+            BI 414{ this._spaces(4) }4{ this._spaces(8) }Hebrew I
             <br />
-            BI 416 4 Hebrew II
+            BI 416{ this._spaces(4) }4{ this._spaces(8) }Hebrew II
             <br />
 
             <h3>Your Choice of Concentration (68 credits):</h3>
-            Global Leadership Concentration:
+            <b>Global Leadership Concentration:</b>
             <br />
             *Take leadership classes from PM 501, PM 504, PM 519, PM 520, PM 521, PM 522,
             PM 523, PM 524, PM 570, PM 571.
@@ -544,7 +546,7 @@ class AcademicsContent extends React.Component {
             <br />
             *4 PG Elective courses
             <br /><br />
-            Christian Worship and Music Concentration:
+            <b>Christian Worship and Music Concentration:</b>
             <br />
             *Take classes from PM 509, PM 515, PM 516, PM 519, PM 520, PM 521, PM 522,
             PM 531 (I, II, III)
@@ -558,7 +560,7 @@ class AcademicsContent extends React.Component {
             *4 PG Elective courses
             <br />
             <br />
-            Christian Counseling Concentration:
+            <b>Christian Counseling Concentration:</b>
             <br />
             *Take leadership classes from PM 521, PM 526, PM 527, PM 528, PM 529, PM 530,
             PM 541, PM 542, PM 543, PM 544.
@@ -572,21 +574,20 @@ class AcademicsContent extends React.Component {
             *4 PG Elective courses
             <br />
             <h2>Doctor of Ministry (DMin, required minimum 3 years)</h2>
-            Required Core Courses:
+            <h4>Required Core Courses:</h4>
+            TH{ this._spaces(14) }16{ this._spaces(10) }2 Theology Elective (800 course level above)
             <br />
-            TH 16 2 Theology Elective (800 course level above)
+            BI{ this._spaces(16) }16{ this._spaces(10) }2 Bible Elective (700 course level above)
             <br />
-            BI 16 2 Bible Elective (700 course level above)
+            PM{ this._spaces(14) }8{ this._spaces(12) }1 Practical Ministry Elective (from PM 874 or PM 876)
             <br />
-            PM 8 1 Practical Ministry Elective (from PM 874 or PM 876)
+            PM 711{ this._spaces(8) }2{ this._spaces(12) }Research Workshop
             <br />
-            PM 711 2 Research Workshop
-            <br />
-            PM 720 6 Doctor’s Thesis
+            PM 720{ this._spaces(7) }6{ this._spaces(12) }Doctor’s Thesis
             <br />
             ____________________________________________________
             <br />
-            <b>Total: 48 Credits</b> (Doctor of Ministry achieved)
+            <b>Total:{ this._spaces(8) }48 Credits</b> (Doctor of Ministry achieved)
           </div>);
   }
 
