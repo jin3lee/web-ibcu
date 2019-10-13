@@ -1,7 +1,13 @@
 import React from "react";
 
 import { connect } from 'react-redux';
-import { PAGE_ID_CAMPUS, PAGE_ID_APPLY, PAGE_ID_ABOUT, PAGE_ID_ACADEMICS } from './../../Container/actionTypes.js'
+import {
+  PAGE_ID_CAMPUS,
+  PAGE_ID_APPLY,
+  PAGE_ID_ABOUT,
+  PAGE_ID_ACADEMICS,
+  PAGE_ID_STAFF
+} from './../../Container/actionTypes.js'
 import { updatePage } from './../../Container/actions.js'
 
 class Navigater extends React.Component {
@@ -33,6 +39,10 @@ class Navigater extends React.Component {
             <div style={{ fontSize: '1.5em', marginRight: 25, marginLeft: 25 }}>/</div>
             <button onClick={ () => { this._updatePageTo( PAGE_ID_CAMPUS ) } } style={ style.navButtonStyle }>
               CAMPUS
+            </button>
+            <div style={{ fontSize: '1.5em', marginRight: 25, marginLeft: 25 }}>/</div>
+            <button onClick={ () => { this._updatePageTo( PAGE_ID_STAFF ) } } style={ style.navButtonStyle }>
+              FACULTY & STAFF
             </button>
         </div>
       </div>

@@ -8,13 +8,15 @@ import CampusPage from './../Pages/CampusPage/CampusPage.js';
 import ApplyPage from './../Pages/ApplyPage/ApplyPage.js';
 import AboutPage from './../Pages/AboutPage/AboutPage.js';
 import AcademicsPage from './../Pages/AcademicsPage/AcademicsPage.js';
+import StaffPage from './../Pages/StaffPage/StaffPage.js';
 
 import {
   PAGE_ID_HOME,
   PAGE_ID_CAMPUS,
   PAGE_ID_APPLY,
   PAGE_ID_ABOUT,
-  PAGE_ID_ACADEMICS
+  PAGE_ID_ACADEMICS,
+  PAGE_ID_STAFF
 } from './actionTypes';
 
 // listeners
@@ -38,6 +40,8 @@ class RootContainer extends React.Component {
           { ( this.props.rootContainer.pageId === PAGE_ID_ABOUT ) && <AboutPage /> }
 
           { ( this.props.rootContainer.pageId === PAGE_ID_ACADEMICS ) && <AcademicsPage /> }
+
+          { ( this.props.rootContainer.pageId === PAGE_ID_STAFF ) && <StaffPage /> }
       </div>
     );
   }
