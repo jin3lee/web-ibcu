@@ -16,7 +16,7 @@ class HomePage extends React.Component {
             <Header />
             <Navigater />
             <ExperienceGallery />
-            <Footer />
+            <Footer disableWhiteBuffer={true} />
           </div>
       </div>
     );
