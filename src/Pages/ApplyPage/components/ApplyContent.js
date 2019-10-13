@@ -21,7 +21,7 @@ class ApplyContent extends React.Component {
     return(
       <div style={ style.container }>
 
-        <div style={{ marginLeft: '5%', width: 550, marginTop: 30 }}>
+        <div style={{ marginLeft: '5%', marginRight: '5%', width: 550, marginTop: 30 }}>
           <div style={{ display: 'flex', flexDirection: 'row', color: 'rgb(90, 90, 90)' }}>
             <button onClick={ () => { this._updatePageTo( PAGE_ID_HOME ) } } style={ style.backFlowButtonStyle }>
               Home
@@ -65,9 +65,18 @@ class ApplyContent extends React.Component {
           <div style={{ fontFamily: 'Avenir', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <a href='https://ibcu-assets.s3-us-west-1.amazonaws.com/Application_Form_2019.docx' download>Click Here to Download Application Form</a>
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <hr />
         </div>
 
-        <div style={{ marginLeft: '5%', width: 550, }}>
+        <div style={{ width: 550, marginLeft: '5%' }}>
           <div style={{ marginRight: '10%', marginTop: 30, fontWeight: 'bold' }}>
             Message from the President
           </div>

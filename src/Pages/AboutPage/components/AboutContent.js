@@ -42,7 +42,7 @@ class AboutContent extends React.Component {
     return(
       <div style={ style.container }>
 
-        <div style={{ marginLeft: '5%', width: 550, marginTop: 30 }}>
+        <div style={{ marginLeft: '5%', marginRight: '5%', width: 550, marginTop: 30 }}>
           <div style={{ display: 'flex', flexDirection: 'row', color: 'rgb(90, 90, 90)' }}>
             <button onClick={ () => { this._updatePageTo( PAGE_ID_HOME ) } } style={ style.backFlowButtonStyle }>
               Home
@@ -56,9 +56,18 @@ class AboutContent extends React.Component {
           </div>
 
           { (this.state.currentContentById === CONTENT_ID_PASSION) && this._getPassionContent() }
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <hr />
         </div>
 
-        <div style={{ marginLeft: '5%', width: 550, marginTop: 30 }}>
+        <div style={{ width: 550, marginTop: 30, marginLeft: '5%' }}>
           <div style={{ fontWeight: 'bold' }}>
             Message from the President
           </div>
