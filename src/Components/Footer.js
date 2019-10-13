@@ -5,15 +5,15 @@ class Footer extends React.Component {
   render() {
     return(
       <div style={ style.technicalContainer }>
-          <a href="ibcuni.com" style={{ fontFamily: "Avenir", fontSize: '1em', textDecoration: 'none', color: '#0C54A3' }}>
+          <a href="ibcuni.com" style={{ fontFamily: "Avenir", fontSize: '1em', textDecoration: 'none', color: 'white' }}>
             International Bible College & University
           </a>
 
-          <div style={{ fontSize: 15, marginTop: 25, fontFamily: "Marker-Felt", fontWeight: 'bold' }}>
+          <div style={{ fontSize: 15, marginTop: 20, fontFamily: "Marker-Felt", fontWeight: 'bold' }}>
             PURSUE TRUTH & EXCELLENCE
           </div>
 
-          <div style={{ marginTop: 25, fontSize: "1em", fontFamily: "Avenir", fontWeight: 'bold' }}>
+          <div style={{ marginTop: 20, fontSize: "1em", fontFamily: "Avenir", fontWeight: 'bold' }}>
             <hr
               style={{
                 color: "#0C54A3",
@@ -24,7 +24,7 @@ class Footer extends React.Component {
             />
           </div>
 
-          <div style={{ fontSize: ".8em", marginTop: 25 }}>
+          <div style={{ fontSize: ".8em", marginTop: 20 }}>
             © International Bible College & University | Federal, WA
           </div>
       </div>
@@ -39,9 +39,10 @@ const style = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    height: 250,
-    color: "#0C54A3",
-    backgroundColor: 'white',
+    backgroundColor: "#0C54A3",
+    color: 'white',
+    paddingTop: 40,
+    paddingBottom: 40,
   },
 }
 
