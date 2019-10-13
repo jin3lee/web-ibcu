@@ -1195,7 +1195,7 @@ class AcademicsContent extends React.Component {
   render() {
     return(
       <div style={ style.container }>
-        <div style={{ width: 550,  marginLeft: '10%', marginRight: '3%', marginTop: 30 }}>
+        <div style={{ width: 550,  marginLeft: '5%', marginTop: 30 }}>
           <div style={{ display: 'flex', flexDirection: 'row', color: 'rgb(90, 90, 90)' }}>
             <button onClick={ () => { this._updatePageTo( PAGE_ID_HOME ) } } style={ style.backFlowButtonStyle }>
               Home
@@ -1231,8 +1231,8 @@ class AcademicsContent extends React.Component {
           <br />
         </div>
 
-        <div style={{ width: 550 }}>
-          <div style={{ marginRight: '10%', marginTop: 30, fontWeight: 'bold' }}>
+        <div style={{ width: 550, marginLeft: '5%' }}>
+          <div style={{ marginTop: 30, fontWeight: 'bold' }}>
             Message from the President
           </div>
           <div style={{ width: '80%' }}>
