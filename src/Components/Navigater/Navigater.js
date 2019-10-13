@@ -28,19 +28,19 @@ class Navigater extends React.Component {
             <button onClick={ () => { this._updatePageTo( PAGE_ID_ABOUT ) } } style={ style.navButtonStyle }>
               ABOUT
             </button>
-            <div style={{ fontSize: '1.5em', marginRight: 25, marginLeft: 25 }}>/</div>
+            <div style={ style.navDividerStyle }>/</div>
             <button onClick={ () => { this._updatePageTo( PAGE_ID_ACADEMICS ) } } style={ style.navButtonStyle }>
               ACADEMICS
             </button>
-            <div style={{ fontSize: '1.5em', marginRight: 25, marginLeft: 25 }}>/</div>
+            <div style={ style.navDividerStyle }>/</div>
             <button onClick={ () => { this._updatePageTo( PAGE_ID_APPLY ) } } style={ style.navButtonStyle }>
               APPLY
             </button>
-            <div style={{ fontSize: '1.5em', marginRight: 25, marginLeft: 25 }}>/</div>
+            <div style={ style.navDividerStyle }>/</div>
             <button onClick={ () => { this._updatePageTo( PAGE_ID_CAMPUS ) } } style={ style.navButtonStyle }>
               CAMPUS
             </button>
-            <div style={{ fontSize: '1.5em', marginRight: 25, marginLeft: 25 }}>/</div>
+            <div style={ style.navDividerStyle }>/</div>
             <button onClick={ () => { this._updatePageTo( PAGE_ID_STAFF ) } } style={ style.navButtonStyle }>
               FACULTY & STAFF
             </button>
@@ -52,7 +52,6 @@ class Navigater extends React.Component {
 
 const style = {
   technicalContainer: {
-    height: 90,
     color: "white",
     display: 'flex',
     overflow: "hidden",
@@ -60,6 +59,8 @@ const style = {
     flexDirection: 'row',
     backgroundColor: '#0C54A3',
     marginLeft: '17%',
+    paddingTop: '1.1%',
+    paddingBottom: '1.1%',
     flexWrap: 'wrap'
   },
   navButtonStyle: {
@@ -70,6 +71,13 @@ const style = {
     fontSize: '1.5em',
     color: 'white',
   },
+  navDividerStyle: {
+    fontFamily: "Avenir",
+    fontSize: '1.5em',
+    color: 'white',
+    marginRight: 25,
+    marginLeft: 25
+  }
 }
 
 const mapStateToProps = (state, ownProps) => {
