@@ -31,7 +31,7 @@ class RootContainer extends React.Component {
 
           <PageDimensions />
 
-          { ( this.props.rootContainer.pageId === PAGE_ID_HOME ) && <HomePage /> }
+          { ( this.props.rootContainer.pageId === PAGE_ID_HOME ) && <AboutPage /> }
 
           { ( this.props.rootContainer.pageId === PAGE_ID_CAMPUS ) && <CampusPage /> }
 
