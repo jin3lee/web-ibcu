@@ -51,6 +51,7 @@ class StaffContent extends React.Component {
           <StaffCard firstName="Richard" lastName="Kong" title="Board of Director & President & Secretary" imgSrc={ kongRichard }/>
           <StaffCard firstName="Yong Seok" lastName="Han" title="Board of Director & Honorary Chairman & Instructor" imgSrc={ hanYongSeok }/>
           <StaffCard firstName="Chong Cheh" lastName="Ko" title="Board of Director & Treasurer" imgSrc={ koChongCheh }/>
+          <StaffCard firstName="Esther" lastName="Jang" title="Director of Admissions and Records" imgSrc={ defaultIcon }/>
           <StaffCard firstName="Mike" lastName="Banks" title="Instructor" imgSrc={ bankMike }/>
           <StaffCard firstName="Choon Won" lastName="Chang" title="Instructor" imgSrc={ changChoonWon }/>
           <StaffCard firstName="Jack" lastName="DeBay" title="Instructor" imgSrc={ debayJack }/>
@@ -58,7 +59,7 @@ class StaffContent extends React.Component {
           <StaffCard firstName="Paul" lastName="Kim" title="Instructor" imgSrc={ kimPaul }/>
           <StaffCard firstName="Ezra" lastName="Kyung" title="Instructor" imgSrc={ kyungEzra }/>
           <StaffCard firstName="Ken" lastName="Southcott" title="Instructor" imgSrc={ southcottKen }/>
-          <StaffCard firstName="Esther" lastName="Jang" title="Director of Admissions and Records" imgSrc={ defaultIcon }/>
+          <StaffCard firstName="Terry" lastName="Tarsiuk" title="Instructor" imgSrc={ tarsiukTerry }/>
         </div>
       </div>
     );

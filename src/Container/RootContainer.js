@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from 'react-redux';
 
 // components
-import HomePage from './../Pages/HomePage/HomePage.js';
+//import HomePage from './../Pages/HomePage/HomePage.js';
 import CampusPage from './../Pages/CampusPage/CampusPage.js';
 import ApplyPage from './../Pages/ApplyPage/ApplyPage.js';
 import AboutPage from './../Pages/AboutPage/AboutPage.js';
@@ -31,7 +31,7 @@ class RootContainer extends React.Component {
 
           <PageDimensions />
 
-          { ( this.props.rootContainer.pageId === PAGE_ID_HOME ) && <AboutPage /> }
+          { ( this.props.rootContainer.pageId === PAGE_ID_HOME ) && <AboutPage/> }
 
           { ( this.props.rootContainer.pageId === PAGE_ID_CAMPUS ) && <CampusPage /> }
 

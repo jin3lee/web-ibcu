@@ -6,6 +6,9 @@ import Footer from './../../Components/Footer.js';
 import Navigater from './../../Components/Navigater/Navigater.js';
 import AboutBanner from './components/AboutBanner.js';
 import AboutContent from './components/AboutContent.js';
+import AboutGoal from './components/AboutGoal.js';
+import AboutProcess from './components/AboutProcess.js';
+import AboutCoreValue from './components/AboutCoreValue.js';
 
 class AboutPage extends React.Component {
   render() {
@@ -16,7 +19,10 @@ class AboutPage extends React.Component {
             <Navigater />
             <AboutBanner />
             <AboutContent />
-            <Footer />
+            <AboutGoal />
+            <AboutProcess />
+            <AboutCoreValue />
+            <Footer disableWhiteBuffer={ true }/>
           </div>
       </div>
     );

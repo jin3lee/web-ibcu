@@ -63,7 +63,7 @@ class AcademicsContent extends React.Component {
     for( var i = 0; i < numberOfSpaces; i++ ) {
       spaces += ".";
     }
-    return(<a style={{ color:'rgb( 0, 0, 0, 0 )' }}>{ spaces }</a>);
+    return( <div style={{ color:'rgb( 0, 0, 0, 0 )' }}>{ spaces }</div>);
   }
 
   _getAcademicMenu() {
