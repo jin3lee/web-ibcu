@@ -8,7 +8,7 @@ class Footer extends React.Component {
         {( !this.props.disableWhiteBuffer ) && <div style={{ backgroundColor: 'white', paddingTop: 40 }}></div>}
         <div style={ style.technicalContainer }>
             <a href="ibcuni.com" style={{ fontFamily: "Avenir", fontSize: '1em', textDecoration: 'none', color: 'white' }}>
-              International Bible College & University
+              Washington International Mission University
             </a>
 
             <div style={{ fontSize: 15, marginTop: 20, fontFamily: "Marker-Felt", fontWeight: 'bold' }}>
