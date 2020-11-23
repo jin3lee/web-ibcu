@@ -47,7 +47,6 @@ class AboutCoreValue extends React.Component {
         <h2 style={{ display: 'flex', justifyContent: 'center' }}>Our Core Values</h2>
           <div style={{
             fontFamily: 'Avenir',
-            fontWeight: 'bold',
             fontSize: '1.4em',
             display: 'flex',
             marginTop: '2%',

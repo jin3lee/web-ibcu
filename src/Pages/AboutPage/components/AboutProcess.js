@@ -30,7 +30,6 @@ class AboutProcess extends React.Component {
         <h2 style={{ display: 'flex', justifyContent: 'center' }}>Our Process</h2>
           <div style={{
             fontFamily: 'Avenir',
-            fontWeight: 'bold',
             fontSize: '1.4em',
             display: 'flex',
             justifyContent: 'center',

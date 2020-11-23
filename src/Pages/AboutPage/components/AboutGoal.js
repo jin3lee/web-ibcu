@@ -41,12 +41,11 @@ class AboutGoal extends React.Component {
           marginLeft: '5%', marginRight: '5%',
           display: 'flex', flexDirection: 'column',
           alignItem: 'center',
-          color: 'white'
+          color: '#0C54A3'
         }}>
         <h2 style={{ display: 'flex', justifyContent: 'center' }}>Our Goal</h2>
           <div style={{
             fontFamily: 'Avenir',
-            fontWeight: 'bold',
             fontSize: '1.4em',
             display: 'flex',
             marginTop: '4%',

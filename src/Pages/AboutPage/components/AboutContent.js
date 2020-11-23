@@ -70,6 +70,8 @@ const style = {
     flexWrap: 'wrap',
     paddingTop: '5%',
     paddingBottom: '10%',
+    color: '#0C54A3',
+    backgroundColor: '#E4EBF3',
   },
   backFlowButtonStyle: {
     marginRight: 10,
