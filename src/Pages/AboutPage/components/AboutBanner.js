@@ -9,7 +9,7 @@ class AboutBanner extends React.Component {
       <div style={ style.container }>
         <div style={{ marginLeft: '10%', justifyContent:'bottom', marginTop:'5%' }}>
           <div style={{ fontSize: '3em', fontWeight: 'bold', color: 'white', textShadow: '-1px 1px 10px rgba(0, 0, 0, 0.75)' }}>
-            DISCOVER INTERNATIONAL BIBLE<br />COLLEGE & UNIVERSITY
+            DISCOVER WASHINGTON INTERNATIONAL<br />MISSION UNIVERSITY
           </div>
           <div style={{ backgroundColor:'#0C54A3', height: 10, width: 200, marginTop: 15 }} />
         </div>
