@@ -8,8 +8,8 @@ class CampusAndTitle extends React.Component {
     return(
       <div style={ style.container }>
         <div style={{ marginLeft: '6%', justifyContent:'bottom', marginTop:'6%', backgroundColor:'rgb(0,0,0,0.5)' }}>
-          <div style={{ fontSize: '3em', fontWeight: 'bold', color: 'white', textShadow: '-1px 1px 10px rgba(0, 0, 0, 0.75)' }}>
-            International Bible College<br />& University Campus
+          <div style={{ fontSize: '3em', fontWeight: 'bold', color: 'white', textShadow: '-5px 1px 15px rgba(0, 0, 0, 0.75)' }}>
+            Washington Internation<br />Mission University Campus
           </div>
           <div style={{ backgroundColor:'#0C54A3', height: 10, width: 200, marginTop: 15 }} />
         </div>

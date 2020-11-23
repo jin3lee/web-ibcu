@@ -33,7 +33,7 @@ class CampusContent extends React.Component {
           </div>
 
           <div style={{ display: 'flex', flexDirection: '', marginTop: '4%', fontFamily: 'Avenir' }}>
-          International Bible College and University – Federal Way, Washington
+          Washington International Mission University – Federal Way, Washington
           </div>
           <br />
           <div style={{ fontFamily: 'Avenir' }}>
