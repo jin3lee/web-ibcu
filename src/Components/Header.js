@@ -23,8 +23,8 @@ class Header extends React.Component {
         <div style={ style.header_style }>
           <div style={{ marginLeft: '10%', alignItems: 'center', display: 'flex' }}>
             <img src={ logo } style={ style.logoStyle } onClick={ () => { this._updatePageTo( PAGE_ID_HOME ) } } alt="logo"/>
-            <a href="ibcuni.com" style={ style.collegeNameStyle }>
-              International Bible College & University
+            <a href="wimuniversity.com" style={ style.collegeNameStyle }>
+              Washington International Mission University
             </a>
           </div>
         </div>
