@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { updatePage } from './../Container/actions.js';
 import { PAGE_ID_HOME } from './../Container/actionTypes.js';
 import logo from '../assets/ibcuni_logo.png';
+import {ReactComponent as WimuLogo} from './../assets/svg/wimuLogo.svg';
 
 class Header extends React.Component {
 
@@ -22,7 +23,7 @@ class Header extends React.Component {
       <header className="header-background">
         <div style={ style.header_style }>
           <div style={{ marginLeft: '10%', alignItems: 'center', display: 'flex' }}>
-            <img src={ logo } style={ style.logoStyle } onClick={ () => { this._updatePageTo( PAGE_ID_HOME ) } } alt="logo"/>
+            <WimuLogo height="90%" width="150" />
             <a href="wimuniversity.com" style={ style.collegeNameStyle }>
               Washington International Mission University
             </a>
@@ -46,7 +47,7 @@ const style = {
     marginLeft: 20,
   },
   collegeNameStyle:{
-    marginLeft: 20,
+    marginLeft: 0,
     fontFamily: "Avenir",
     fontSize: '1.5em',
     color: "#0C54A3",
