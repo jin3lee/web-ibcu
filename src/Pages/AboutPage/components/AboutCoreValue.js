@@ -42,7 +42,7 @@ class AboutCoreValue extends React.Component {
           marginLeft: '5%', marginRight: '5%',
           display: 'flex', flexDirection: 'column',
           alignItem: 'center',
-          color: '#0C54A3'
+          color: 'black'
         }}>
         <h2 style={{ display: 'flex', justifyContent: 'center' }}>Our Core Values</h2>
           <div style={{

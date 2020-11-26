@@ -67,7 +67,7 @@ const style = {
     backgroundColor: '#E4EBF3',
     justifyContent: 'center',
     flexWrap: 'wrap',
-    color: '#1F60A9',
+    color: 'black',
     paddingTop: '5%',
     paddingBottom: '10%',
   },
