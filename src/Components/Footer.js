@@ -27,7 +27,7 @@ class Footer extends React.Component {
             </div>
 
             <div style={{ fontSize: ".8em", marginTop: 20 }}>
-              © International Bible College & University | Federal, WA
+              © Washington International Mission University | Federal, WA
             </div>
         </div>
       </div>
