@@ -77,7 +77,7 @@ const style = {
   container: {
     display: 'flex',
     flexDirection: 'row',
-    backgroundColor: '#84ACD2',
+    backgroundColor: 'white',
     justifyContent: 'center',
     flexWrap: 'wrap',
     paddingTop: '5%',
