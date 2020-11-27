@@ -5,6 +5,7 @@ import presidentImage from '../../../assets/staff/staff_r_kong.png';
 import { connect } from 'react-redux';
 import { updatePage } from '../../../Container/actions.js';
 import { PAGE_ID_HOME } from '../../../Container/actionTypes.js';
+import { catalog } from './../../../assets/documents/2020_WIMU_Catalog.docx';
 
 import MessageFromThePresident from './../../../Components/Other/MessageFromThePresident.js';
 
@@ -55,6 +56,8 @@ class AcademicsContent extends React.Component {
         return "Outline of Programs";
       case 8:
         return "Course Descriptions";
+      case 9:
+        return "WIMU Catalog";
       default:
         return "default";
     }
@@ -87,6 +90,8 @@ class AcademicsContent extends React.Component {
       <button onClick={ () => { this._updateContentTo(7) } } style={ style.hyperlinkStyle }>Outline of Programs</button>
       <br /><br />
       <button onClick={ () => { this._updateContentTo(8) } } style={ style.hyperlinkStyle }>Course Descriptions</button>
+      <br /><br />
+      <button onClick={ () => { this._updateContentTo(9) } } style={ style.hyperlinkStyle }>WIMU Catalog</button>
     </div>;
   }
 
@@ -592,7 +597,6 @@ class AcademicsContent extends React.Component {
             <b>Total:{ this._spaces(8) }48 Credits</b> (Doctor of Ministry achieved)
           </div>);
   }
-
   _getCourseDescriptionsContent() {
     return(<div>
             <h1>Course Descriptions</h1>
@@ -1193,6 +1197,12 @@ class AcademicsContent extends React.Component {
             community as a future minister. If you have specific areas to work with, you have to
             ask to the school administer to have permit.</div>);
   }
+  _getWimuCatalog() {
+    return(<div>
+      <h1>WIMU Catalog</h1>
+      {<embed type="application/pdf" style={{ backgroundColor: 'red', width: '100%', height: '500px' }} src={ catalog }></embed>}
+    </div>);
+  }
 
   render() {
     return(
@@ -1228,6 +1238,7 @@ class AcademicsContent extends React.Component {
           { ( this.state.currentContentId === 6 ) && this._getProgramDescriptionsContent() }
           { ( this.state.currentContentId === 7 ) && this._getOutlineOfProgramsContent() }
           { ( this.state.currentContentId === 8 ) && this._getCourseDescriptionsContent() }
+          { ( this.state.currentContentId === 9 ) && this._getWimuCatalog() }
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
           <hr />
           <br />

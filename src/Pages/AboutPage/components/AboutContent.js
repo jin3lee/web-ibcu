@@ -32,6 +32,9 @@ class AboutContent extends React.Component {
         communication technology, and methods are dynamic. Therefore, we will train you to
         become His Light in this changing world with the unchanging Word of God, imparting
         Jesus’ gifts, as we build churches in a global community together.
+        <br />
+        <br />
+        You will find that Washington International Mission University is a great environment to seek God, discover your own gifts, form your core values, and identify & activate the desires He built in you.
       </div>
     </div>
   }
