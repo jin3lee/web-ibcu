@@ -1,4 +1,6 @@
 import React from "react";
+import { Document, Page } from 'react-pdf';
+import { pdfjs } from 'react-pdf';
 
 import presidentImage from '../../../assets/staff/staff_r_kong.png';
 
@@ -91,7 +93,7 @@ class AcademicsContent extends React.Component {
       <br /><br />
       <button onClick={ () => { this._updateContentTo(8) } } style={ style.hyperlinkStyle }>Course Descriptions</button>
       <br /><br />
-      <button onClick={ () => { this._updateContentTo(9) } } style={ style.hyperlinkStyle }>WIMU Catalog</button>
+      <button onClick={ () => { this._updateContentTo(9) } } style={ style.hyperlinkStyle }>WIMU 2020 Catalog</button>
     </div>;
   }
 
@@ -1199,9 +1201,9 @@ class AcademicsContent extends React.Component {
   }
   _getWimuCatalog() {
     return(<div>
-      <h1>WIMU Catalog</h1>
-      {<embed type="application/pdf" style={{ backgroundColor: 'red', width: '100%', height: '500px' }} src={ catalog }></embed>}
-    </div>);
+      <h1>WIMU 2020 Catalog</h1>
+      <a href='https://ibcu-assets.s3-us-west-1.amazonaws.com/2020_WIMU_Catalog.pdf' download>Click Here to 2020 WIMU Catalog PDF</a>
+      </div>);
   }
 
   render() {
