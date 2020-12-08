@@ -25,7 +25,7 @@ class AboutContent extends React.Component {
     return <div>
       <div style={{ marginTop: '5%', fontFamily: 'Avenir', fontWeight: 'bold', justifyContent: 'center', display: 'flex', fontSize: '1.5em' }}>Our Passion</div>
       <div style={{ display: 'flex', marginTop: '4%', fontFamily: 'Avenir', textAlign: 'center', fontSize: '1.4em' }}>
-        Our primary passion at International Bible College and University is to build you up in
+        Our primary passion at Washington International Mission University is to build you up in
         your faith and to equip you for ministry to others. We desire to present every man
         complete in Christ (Colossians 1:28). We are training activators who are launching
         globally, each one transforming others with revelation and wisdom. Computers,
