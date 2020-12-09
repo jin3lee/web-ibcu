@@ -10,12 +10,12 @@ class ExperienceGallery extends React.Component {
         <div style={{ marginLeft: '6%' }}>
           <div style={{ display: "flex" }}>
             <div style={{ flex: 1, fontSize: '1.5em', color: '#0C54A3', fontWeight: 'bold', fontStyle: 'italic', backgroundColor:"#E4EBF3", paddingLeft: 15, paddingRight: 15, paddingTop:8, paddingBottom:8 }}>
-              #IbcuExperience
+              #WimuExperience
             </div>
             <div style={{ flex: 1.5 }}/>
           </div>
           <div style={{ fontSize: '4em', fontWeight: 'bold', color: 'white' }}>
-            Hikes & Trails
+            Live your calling.
           </div>
           <div style={{ backgroundColor:'#0C54A3', height: 10, width: 200, marginTop: 15 }} />
           <div style={{

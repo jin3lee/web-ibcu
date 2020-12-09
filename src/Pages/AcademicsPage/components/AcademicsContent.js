@@ -1,6 +1,4 @@
 import React from "react";
-import { Document, Page } from 'react-pdf';
-import { pdfjs } from 'react-pdf';
 
 import presidentImage from '../../../assets/staff/staff_r_kong.png';
 

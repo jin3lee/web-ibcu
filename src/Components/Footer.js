@@ -45,7 +45,8 @@ const style = {
     backgroundColor: "#0C54A3",
     color: 'white',
     paddingTop: 40,
-    paddingBottom: 40
+    paddingBottom: 40,
+    height: "100%",
   },
 }
 

@@ -2,13 +2,20 @@ import React from "react";
 
 import { connect } from 'react-redux';
 
-// components
-//import HomePage from './../Pages/HomePage/HomePage.js';
+// header & footer & navigator
+import Header from './../Components/Header.js';
+import Footer from './../Components/Footer.js';
+import Navigater from './../Components/Navigater/Navigater.js';
+
+// paths
+import HomePage from './../Pages/HomePage/HomePage.js';
 import CampusPage from './../Pages/CampusPage/CampusPage.js';
 import ApplyPage from './../Pages/ApplyPage/ApplyPage.js';
 import AboutPage from './../Pages/AboutPage/AboutPage.js';
 import AcademicsPage from './../Pages/AcademicsPage/AcademicsPage.js';
 import StaffPage from './../Pages/StaffPage/StaffPage.js';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import {
   PAGE_ID_HOME,
@@ -29,19 +36,20 @@ class RootContainer extends React.Component {
     return(
       <div className="root-container-background" style={ style.rootContainerStyle }>
 
-          <PageDimensions />
+          <Router>
+            <PageDimensions />
+            <Header />
+            <Navigater />
 
-          { ( this.props.rootContainer.pageId === PAGE_ID_HOME ) && <AboutPage/> }
+            <Route path="/" exact component={ HomePage } />
+            <Route path="/about" component={ AboutPage } />
+            <Route path="/academics" component={ AcademicsPage } />
+            <Route path="/apply" component={ ApplyPage } />
+            <Route path="/campus" component={ CampusPage } />
+            <Route path="/staff" component={ StaffPage } />
 
-          { ( this.props.rootContainer.pageId === PAGE_ID_CAMPUS ) && <CampusPage /> }
-
-          { ( this.props.rootContainer.pageId === PAGE_ID_APPLY ) && <ApplyPage /> }
-
-          { ( this.props.rootContainer.pageId === PAGE_ID_ABOUT ) && <AboutPage /> }
-
-          { ( this.props.rootContainer.pageId === PAGE_ID_ACADEMICS ) && <AcademicsPage /> }
-
-          { ( this.props.rootContainer.pageId === PAGE_ID_STAFF ) && <StaffPage /> }
+            <Footer disableWhiteBuffer={ true } />
+          </Router>
       </div>
     );
   }
