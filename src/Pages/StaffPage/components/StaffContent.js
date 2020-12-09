@@ -15,6 +15,8 @@ import kongRichard from './../../../assets/staff/staff_icon/Kong_Richard.png';
 import kyungEzra from './../../../assets/staff/staff_icon/Kyung_Ezra.png';
 import southcottKen from './../../../assets/staff/staff_icon/Southcott_Ken.png';
 import tarsiukTerry from './../../../assets/staff/staff_icon/Tarsiuk_Terry.png';
+import whangSunKyu from './../../../assets/staff/staff_icon/Whang_SunKyu.png';
+import hanhSungChu from './../../../assets/staff/staff_icon/Hanh_SungChu.png';
 import defaultIcon from './../../../assets/staff/staff_icon/default.png';
 
 import StaffCard from './StaffCard.js';
@@ -33,24 +35,13 @@ class StaffContent extends React.Component {
   render() {
     return(
       <div style={ style.container }>
-        <div style={{ width: 400, marginLeft: '5%', marginRight: '5%', marginTop: 30 }}>
-          <div style={{ display: 'flex', flexDirection: 'row', color: 'rgb(90, 90, 90)' }}>
-            <button onClick={ () => { this._updatePageTo( PAGE_ID_HOME ) } } style={ style.backFlowButtonStyle }>
-              Home
-            </button>
-            <div style={ style.backFlowButtonStyle }>
-              >
-            </div>
-            <button onClick={ () => { this._updatePageTo( PAGE_ID_STAFF ) } } style={ style.backFlowButtonStyle }>
-              Faculty & Staff
-            </button>
-          </div>
-        </div>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'center'}}>
           <StaffCard firstName="Richard" lastName="Kong" title="Board of Director & President & Secretary" imgSrc={ kongRichard }/>
           <StaffCard firstName="Yong Seok" lastName="Han" title="Board of Director & Honorary Chairman & Instructor" imgSrc={ hanYongSeok }/>
           <StaffCard firstName="Chong Cheh" lastName="Ko" title="Board of Director & Treasurer" imgSrc={ koChongCheh }/>
+          <StaffCard firstName="Sung Chu" lastName="Hanh" title="Board of Director & Instructor" imgSrc={ hanhSungChu }/>
+          <StaffCard firstName="Sun Kyu" lastName="Whang" title="Board of Director & Instructor" imgSrc={ whangSunKyu }/>
           <StaffCard firstName="Esther" lastName="Jang" title="Director of Admissions and Records" imgSrc={ defaultIcon }/>
           <StaffCard firstName="Mike" lastName="Banks" title="Instructor" imgSrc={ bankMike }/>
           <StaffCard firstName="Choon Won" lastName="Chang" title="Instructor" imgSrc={ changChoonWon }/>

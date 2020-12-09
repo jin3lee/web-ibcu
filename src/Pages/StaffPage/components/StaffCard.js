@@ -35,6 +35,12 @@ const style = {
     justifyContent: 'left',
     width: 300,
     height: 100,
+    margin: 5,
+    paddingLeft: 5, 
+    paddingRight: 10,
+    borderRadius: 5,
+    border: '2px solid',
+    borderColor: 'rgba(50, 50, 50, .2)'
   },
   logoStyle:{
     width: 80,
