@@ -66,32 +66,24 @@ class ApplyContent extends React.Component {
             <a href='https://ibcu-assets.s3-us-west-1.amazonaws.com/WIMU_Application_Form.docx' download>Click Here to Download Application Form</a>
           </div>
           <br />
-          <div style={{ display: 'flex', justifyContent: 'center'}}>
-            <h3>How to submit application form:</h3>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
-            <div style={{ fontFamily: 'Avenir', display: 'flex' }}>
-              <b style={{ marginRight: 15, whiteSpace: 'nowrap' }}>Option 1</b> <div>Scan and email to rhkong@yahoo.com</div>
+          <div style={{ display: 'flex', alignContent: 'center', justifyContent: 'center' }}>
+            <div style={{ backgroundColor: 'rgba(100, 100, 100, .5)', margin: 10, width: '70%' }}>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <h3>How to submit application form:</h3>
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', marginLeft: '5%', marginRight: '5%', marginBottom: '5%'}}>
+                <div style={{ fontFamily: 'Avenir', display: 'flex' }}>
+                  <b style={{ marginRight: 15, whiteSpace: 'nowrap' }}>Option 1</b> <div>Scan and email to rhkong@yahoo.com</div>
+                </div>
+                <div style={{ margin: 10, marginLeft: '50%' }}>or</div>
+                <div style={{ fontFamily: 'Avenir', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <b style={{ marginRight: 15, whiteSpace: 'nowrap' }}>Option 2</b>
+                  <div>Mail completed application and/or payment to: Washington International Mission University 2808 S 308th LaneFederal Way, WA 98003 USA</div>
+                </div>
+              </div>
             </div>
-            <div style={{ margin: 10, marginLeft: '50%' }}>or</div>
-            <div style={{ fontFamily: 'Avenir', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <b style={{ marginRight: 15, whiteSpace: 'nowrap' }}>Option 2</b>
-              <div>Mail completed application and/or payment to: Washington International Mission University 2808 S 308th LaneFederal Way, WA 98003 USA</div>
-            </div>
           </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <hr />
         </div>
-
-        <MessageFromThePresident />
-
       </div>
     );
   }
