@@ -67,7 +67,7 @@ class ApplyContent extends React.Component {
           </div>
           <br />
           <div style={{ display: 'flex', alignContent: 'center', justifyContent: 'center' }}>
-            <div style={{ backgroundColor: 'rgba(100, 100, 100, .5)', margin: 10, width: '70%' }}>
+            <div style={{ backgroundColor: 'rgba(100, 100, 100, .5)', margin: 10, width: '90%' }}>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <h3>How to submit application form:</h3>
               </div>
