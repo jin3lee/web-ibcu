@@ -34,21 +34,23 @@ const style = {
     alignItems: 'center',
     flexDirection: 'row',
     backgroundColor: '#0C54A3',
-    marginLeft: '17%',
     paddingTop: '1.1%',
     paddingBottom: '1.1%',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    justifyContent: 'flex-end',
+    marginRight: '2%'
   },
   navButtonStyle: {
     backgroundColor:'rgb(0,0,0,0)',
     border: "0px solid #000000",
     textDecoration: 'none',
-    fontFamily: "Avenir",
-    fontSize: '1.5em',
+    fontFamily: "Roboto",
+    fontSize: '1.3em',
     color: 'white',
+    fontWeight: '700',
   },
   navDividerStyle: {
-    fontFamily: "Avenir",
+    fontFamily: "Arial",
     fontSize: '1.5em',
     color: 'white',
     marginRight: 25,

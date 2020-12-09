@@ -16,7 +16,7 @@ class Header extends React.Component {
             flexDirection: 'column',
             margin: 5,
             marginLeft: '5%',
-            marginRight: '5%'
+            marginRight: '1%'
           }}>
             <div>
               <Link to="/">
@@ -43,15 +43,17 @@ const style = {
     backgroundColor: 'white',
   },
   logoStyle:{
-    width: 65,
-    height: 65,
+    width: 35,
+    height: 35,
   },
   collegeNameStyle:{
-    fontFamily: "Avenir",
-    fontSize: '1.5em',
+    fontFamily: "Arial",
+    fontSize: '1.3em',
     color: "#0C54A3",
     textDecoration: 'none',
+    fontWeight: 700,
     width: '100%',
+    paddingBottom: 3
   },
 }
 
