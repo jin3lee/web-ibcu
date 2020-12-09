@@ -1,9 +1,5 @@
 import React from "react";
 
-// import './../styles.css';
-import Header from './../../Components/Header.js';
-import Footer from './../../Components/Footer.js';
-import Navigater from './../../Components/Navigater/Navigater.js';
 import AboutBanner from './components/AboutBanner.js';
 import AboutContent from './components/AboutContent.js';
 import AboutGoal from './components/AboutGoal.js';

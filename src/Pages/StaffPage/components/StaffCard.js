@@ -1,28 +1,32 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 class StaffCard extends React.Component {
 
   render() {
     return(
-      <div style={ style.container }>
-        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-          <img src={ this.props.imgSrc } style={ style.logoStyle } alt="staffPhoto"/>
-        </div>
-        <div style={{
-                      flex: 2,
-                      display: 'flex',
-                      flexDirection: 'column',
-                      justifyContent: 'center',
-                      marginLeft: 20
-                    }}>
-          <div style={{ marginBottom: 2, fontSize: 20, fontFamily: 'Avenir', fontWeight: 'bold'}}>
-            { this.props.firstName } { this.props.lastName }
+        <div style={ style.container }>
+          <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <img src={ this.props.imgSrc } style={ style.logoStyle } alt="staffPhoto"/>
           </div>
-          <div style={{ color: '#0C54A3', fontSize: 14}}>
-            { this.props.title }
+          <div style={{
+                        flex: 2,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        marginLeft: 20
+                      }}>
+            <div style={{ marginBottom: 2, fontSize: 20, fontFamily: 'Avenir', fontWeight: 'bold'}}>
+              <Link to={`/staff/${ this.props.staffId }`} style={{ fontFamily: 'roboto', textDecoration: 'none', color: 'black' }}>
+                { this.props.firstName } { this.props.lastName }
+              </Link>
+            </div>
+            <div style={{ color: '#0C54A3', fontSize: 14}}>
+              { this.props.title }
+            </div>
           </div>
         </div>
-      </div>
     );
   }
 }

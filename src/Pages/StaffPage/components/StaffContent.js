@@ -1,8 +1,6 @@
 import React from "react";
 
 import { connect } from 'react-redux';
-import { updatePage } from '../../../Container/actions.js';
-import { PAGE_ID_HOME, PAGE_ID_STAFF } from '../../../Container/actionTypes.js'
 
 import bankMike from './../../../assets/staff/staff_icon/Banks_Mike.png';
 import changChoonWon from './../../../assets/staff/staff_icon/Chang_Choon_Won.png';
@@ -23,34 +21,24 @@ import StaffCard from './StaffCard.js';
 
 class StaffContent extends React.Component {
 
-  constructor( props ) {
-    super( props );
-    this._updatePageTo = this._updatePageTo.bind(this);
-  }
-
-  _updatePageTo( pageId ) {
-    this.props.dispatch( updatePage( pageId ) );
-  }
-
   render() {
     return(
       <div style={ style.container }>
-
         <div style={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'center'}}>
-          <StaffCard firstName="Richard" lastName="Kong" title="Board of Director & President & Secretary" imgSrc={ kongRichard }/>
-          <StaffCard firstName="Yong Seok" lastName="Han" title="Board of Director & Honorary Chairman & Instructor" imgSrc={ hanYongSeok }/>
-          <StaffCard firstName="Chong Cheh" lastName="Ko" title="Board of Director & Treasurer" imgSrc={ koChongCheh }/>
-          <StaffCard firstName="Sung Chu" lastName="Hanh" title="Board of Director & Instructor" imgSrc={ hanhSungChu }/>
-          <StaffCard firstName="Sun Kyu" lastName="Whang" title="Board of Director & Instructor" imgSrc={ whangSunKyu }/>
-          <StaffCard firstName="Esther" lastName="Jang" title="Director of Admissions and Records" imgSrc={ defaultIcon }/>
-          <StaffCard firstName="Mike" lastName="Banks" title="Instructor" imgSrc={ bankMike }/>
-          <StaffCard firstName="Choon Won" lastName="Chang" title="Instructor" imgSrc={ changChoonWon }/>
-          <StaffCard firstName="Jack" lastName="DeBay" title="Instructor" imgSrc={ debayJack }/>
-          <StaffCard firstName="Shirl" lastName="DeBay" title="Instructor" imgSrc={ debayShirl }/>
-          <StaffCard firstName="Paul" lastName="Kim" title="Instructor" imgSrc={ kimPaul }/>
-          <StaffCard firstName="Ezra" lastName="Kyung" title="Instructor" imgSrc={ kyungEzra }/>
-          <StaffCard firstName="Ken" lastName="Southcott" title="Instructor" imgSrc={ southcottKen }/>
-          <StaffCard firstName="Terry" lastName="Tarsiuk" title="Instructor" imgSrc={ tarsiukTerry }/>
+          <StaffCard staffId="Richard-Kong" firstName="Richard" lastName="Kong" title="Board of Director & President & Secretary" imgSrc={ kongRichard }/>
+          <StaffCard staffId="YongSeok-Han" firstName="Yong Seok" lastName="Han" title="Board of Director & Honorary Chairman & Instructor" imgSrc={ hanYongSeok }/>
+          <StaffCard staffId="ChongCheh-Ko" firstName="Chong Cheh" lastName="Ko" title="Board of Director & Treasurer" imgSrc={ koChongCheh }/>
+          <StaffCard staffId="SungChu-Hanh" firstName="Sung Chu" lastName="Hanh" title="Board of Director & Instructor" imgSrc={ hanhSungChu }/>
+          <StaffCard staffId="SunKyu-Whang" firstName="Sun Kyu" lastName="Whang" title="Board of Director & Instructor" imgSrc={ whangSunKyu }/>
+          <StaffCard staffId="Esther-Jang" firstName="Esther" lastName="Jang" title="Director of Admissions and Records" imgSrc={ defaultIcon }/>
+          <StaffCard staffId="Mike-Banks" firstName="Mike" lastName="Banks" title="Instructor" imgSrc={ bankMike }/>
+          <StaffCard staffId="ChoonWon-Chang" firstName="Choon Won" lastName="Chang" title="Instructor" imgSrc={ changChoonWon }/>
+          <StaffCard staffId="Jack-DeBay" firstName="Jack" lastName="DeBay" title="Instructor" imgSrc={ debayJack }/>
+          <StaffCard staffId="Shirl-DeBay" firstName="Shirl" lastName="DeBay" title="Instructor" imgSrc={ debayShirl }/>
+          <StaffCard staffId="Paul-Kim" firstName="Paul" lastName="Kim" title="Instructor" imgSrc={ kimPaul }/>
+          <StaffCard staffId="Ezra-Kyung" firstName="Ezra" lastName="Kyung" title="Instructor" imgSrc={ kyungEzra }/>
+          <StaffCard staffId="Ken-Southcott" firstName="Ken" lastName="Southcott" title="Instructor" imgSrc={ southcottKen }/>
+          <StaffCard staffId="Terry-Tarsiuk" firstName="Terry" lastName="Tarsiuk" title="Instructor" imgSrc={ tarsiukTerry }/>
         </div>
       </div>
     );

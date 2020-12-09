@@ -1,11 +1,8 @@
 import React from "react";
 
-import presidentImage from '../../../assets/staff/staff_r_kong.png';
-
 import { connect } from 'react-redux';
 import { updatePage } from '../../../Container/actions.js';
 import { PAGE_ID_HOME } from '../../../Container/actionTypes.js';
-import { catalog } from './../../../assets/documents/2020_WIMU_Catalog.docx';
 
 import MessageFromThePresident from './../../../Components/Other/MessageFromThePresident.js';
 

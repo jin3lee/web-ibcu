@@ -17,15 +17,6 @@ import StaffPage from './../Pages/StaffPage/StaffPage.js';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import {
-  PAGE_ID_HOME,
-  PAGE_ID_CAMPUS,
-  PAGE_ID_APPLY,
-  PAGE_ID_ABOUT,
-  PAGE_ID_ACADEMICS,
-  PAGE_ID_STAFF
-} from './actionTypes';
-
 // listeners
 import PageDimensions from './../Components/PageDimensions/PageDimensions.js';
 

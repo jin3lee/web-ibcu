@@ -68,7 +68,6 @@ const style = {
   container: {
     display: 'flex',
     flexDirection: 'row',
-    backgroundColor: 'white',
     justifyContent: 'center',
     flexWrap: 'wrap',
     paddingTop: '5%',
