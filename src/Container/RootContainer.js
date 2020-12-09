@@ -40,14 +40,15 @@ class RootContainer extends React.Component {
             <PageDimensions />
             <Header />
             <Navigater />
-
-            <Route path="/" exact component={ HomePage } />
-            <Route path="/about" component={ AboutPage } />
-            <Route path="/academics" component={ AcademicsPage } />
-            <Route path="/apply" component={ ApplyPage } />
-            <Route path="/campus" component={ CampusPage } />
-            <Route path="/staff" component={ StaffPage } />
-
+              <Switch>
+                <Route path="/" exact component={ HomePage } />
+                <Route path="/home" exact component={ HomePage } />
+                <Route path="/about" exact component={ AboutPage } />
+                <Route path="/academics" exact component={ AcademicsPage } />
+                <Route path="/apply" exact component={ ApplyPage } />
+                <Route path="/campus" exact component={ CampusPage } />
+                <Route path="/staff" exact component={ StaffPage } />
+              </Switch>
             <Footer disableWhiteBuffer={ true } />
           </Router>
       </div>

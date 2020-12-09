@@ -14,7 +14,7 @@ class HomePage extends React.Component {
               
               <div style={{ padding: '2%' }}/>
 
-              <Link style={{ backgroundColor: '#0C54A3', color: 'white', width: '20%', textAlign: 'center', padding: 15, borderRadius: 5, textDecoration: 'none', fontSize: 15, fontFamily: 'Roboto', fontWeight: '400' }} to="\apply">JOIN WIMU</Link>
+              <Link style={{ backgroundColor: '#0C54A3', color: 'white', width: '20%', textAlign: 'center', padding: 15, borderRadius: 5, textDecoration: 'none', fontSize: 15, fontFamily: 'Roboto', fontWeight: '400' }} to="/apply">JOIN WIMU</Link>
             </div>
           </div>
       </div>

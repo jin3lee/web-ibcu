@@ -19,16 +19,20 @@ class ExperienceGallery extends React.Component {
           </div>
           <div style={{ backgroundColor:'#0C54A3', height: 10, width: 200, marginTop: 15 }} />
           <div style={{
-            color: 'white',
-            fontSize: '1em',
-            fontWeight: 'bold',
-            fontStyle: 'Italic',
-            fontFamily: 'Avenir',
-            backgroundColor: 'rgba(52, 67, 82, 0.4)',
-            width: 400,
-            marginTop: 25,
+              backgroundColor: 'rgba(52, 67, 82, 0.4)',
+              marginTop: 25,
+              padding: 10,
+              width: '40%'
           }}>
-            The Lord said, “Go out and stand on the mountain in the presence of the Lord, for the Lord is about to pass by.” - 1 Kings 19:11
+            <div style={{
+              color: 'white',
+              fontSize: '1em',
+              fontWeight: 'bold',
+              fontStyle: 'Italic',
+              fontFamily: 'Avenir',
+            }}>
+              The Lord said, “Go out and stand on the mountain in the presence of the Lord, for the Lord is about to pass by.” - 1 Kings 19:11
+            </div>
           </div>
         </div>
       </div>

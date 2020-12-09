@@ -12,11 +12,8 @@ class StaffPage extends React.Component {
     return(
       <div className="root-container-background" style={ style.homePageStyle }>
           <div style={{ background: 'linear-gradient(to bottom, rgb(0, 0, 60), rgb(0, 0, 0))' }}>
-            <Header />
-            <Navigater />
             <StaffAndTitle />
             <StaffContent />
-            <Footer />
           </div>
       </div>
     );

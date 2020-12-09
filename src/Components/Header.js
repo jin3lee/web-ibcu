@@ -23,7 +23,8 @@ class Header extends React.Component {
       <header className="header-background">
         <div style={ style.header_style }>
           <div style={{ marginLeft: '10%', alignItems: 'center', display: 'flex' }}>
-            <WimuLogo height="90%" width="150" />
+            <WimuLogo style={{ height: '75%', width: '10%' }} />
+            <div style={{ padding: '1%' }} />
             <a href="wimuniversity.com" style={ style.collegeNameStyle }>
               Washington International Mission University
             </a>
@@ -37,7 +38,6 @@ class Header extends React.Component {
 const style = {
   header_style: {
     overflow: "hidden",
-    height: 90,
     display: 'flex',
     backgroundColor: 'white',
   },
