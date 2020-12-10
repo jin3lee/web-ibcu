@@ -1,7 +1,5 @@
 import React from "react";
 
-import MessageFromThePresident from './../../../Components/Other/MessageFromThePresident.js';
-
 import { connect } from 'react-redux';
 import { updatePage } from '../../../Container/actions.js';
 import { PAGE_ID_HOME, PAGE_ID_APPLY } from '../../../Container/actionTypes.js'

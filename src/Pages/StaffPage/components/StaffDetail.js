@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { connect } from 'react-redux';
+import { useParams } from 'react-router-dom';
 
 class StaffDetail extends React.Component {
 
-  constructor( props ) {
-    super( props );
+  constructor(props){
+    super(props);
+    this.state = { 
+      id: null
+    };
   }
 
+
   render() {
-    console.log(this.props);
+    // console.log('testing: ', id);
     return(
       <div style={ style.container }>
-        test {this.props}
+        test 
       </div>
     );
   }

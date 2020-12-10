@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import StaffAndTitle from './components/StaffAndTitle.js';
 import StaffContent from './components/StaffContent.js';

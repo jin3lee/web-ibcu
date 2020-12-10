@@ -14,6 +14,7 @@ import ApplyPage from './../Pages/ApplyPage/ApplyPage.js';
 import AboutPage from './../Pages/AboutPage/AboutPage.js';
 import AcademicsPage from './../Pages/AcademicsPage/AcademicsPage.js';
 import StaffPage from './../Pages/StaffPage/StaffPage.js';
+import StaffDetail from './../Pages/StaffPage/components/StaffDetail.js';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -39,6 +40,7 @@ class RootContainer extends React.Component {
                 <Route path="/apply" exact component={ ApplyPage } />
                 <Route path="/campus" exact component={ CampusPage } />
                 <Route path="/staff" exact component={ StaffPage } />
+                <Route path="/staff/:id" exact component={ StaffDetail } />
               </Switch>
             <Footer disableWhiteBuffer={ true } />
           </Router>
