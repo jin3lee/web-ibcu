@@ -46,35 +46,36 @@ class Header extends React.Component {
             justifyContent: 'center', 
             marginRight: '2%'
           }}>
-            <div style={{ 
+            <button style={{ 
               display: 'flex',
               flexDirection: 'row',
               backgroundColor: 'rgba(12,84,163,.15)',
-              borderColor: 'gray',
-              borderWidth: 50,
+              border: 'none',
               paddingLeft: 10,
               paddingRight: 10,
               paddingTop: 5,
               paddingBottom: 5,
-              borderRadius: 100,
+              borderRadius: 50,
+              verticalAlign: 'center',
+              alignItems: 'center',
               justifyContent: 'center'
             }}>
               
               <div style={{ 
                 display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-                  
                   <UnitedStatesIcon style={ style.iconLanguageStyle } />
               </div>
               
               <div style={{ width: 10 }}/>
               
               <div style={{ 
-              display: 'flex', flexDirection: 'column', justifyContent: 'center', fontWeight: 600,
-              fontFamily: 'Calibri'}}>
+              fontWeight: 600,
+              fontFamily: 'Calibri',
+              }}>
                 ENGLISH
               </div>
 
-            </div>
+            </button>
            </div>
         </div>
       </header>
