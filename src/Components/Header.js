@@ -2,6 +2,8 @@ import React from "react";
 
 import { connect } from 'react-redux';
 import { ReactComponent as WimuLogo } from './../assets/svg/wimuLogo.svg';
+import { ReactComponent as SouthKoreaIcon } from './../assets/svg/south-korea.svg';
+import { ReactComponent as UnitedStatesIcon } from './../assets/svg/united-states.svg';
 import { Link } from "react-router-dom";
 
 class Header extends React.Component {
@@ -9,27 +11,71 @@ class Header extends React.Component {
   render() {
     return(
       <header className="header-background">
-        <div style={ style.header_style }>
-          <div style={{ 
-            display: 'flex',  
-            justifyContent: 'center',
-            flexDirection: 'column',
-            margin: 5,
-            marginLeft: '5%',
-            marginRight: '1%'
+        
+        <div style={{ 
+          display: 'flex', 
+          flexDirection: 'row', 
+          justifyContent: 'space-between',
           }}>
-            <div>
-              <Link to="/">
-                <WimuLogo style={ style.logoStyle } />
+          
+          <div style={ style.header_style }>
+            <div style={{ 
+              display: 'flex',  
+              justifyContent: 'center',
+              flexDirection: 'column',
+              margin: 5,
+              marginLeft: '5%',
+            }}>
+              <div>
+                <Link to="/">
+                  <WimuLogo style={ style.logoStyle } />
+                </Link>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+              <Link to="/" style={ style.collegeNameStyle }>
+                Washington International Mission University
               </Link>
             </div>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-            <Link to="/" style={ style.collegeNameStyle }>
-              Washington International Mission University
-            </Link>
-          </div>
+          <div style={{ 
+            display: 'flex',
+            flexDirection: 'column', 
+            justifyContent: 'center', 
+            marginRight: '2%'
+          }}>
+            <div style={{ 
+              display: 'flex',
+              flexDirection: 'row',
+              backgroundColor: 'rgba(12,84,163,.15)',
+              borderColor: 'gray',
+              borderWidth: 50,
+              paddingLeft: 10,
+              paddingRight: 10,
+              paddingTop: 5,
+              paddingBottom: 5,
+              borderRadius: 100,
+              justifyContent: 'center'
+            }}>
+              
+              <div style={{ 
+                display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                  
+                  <UnitedStatesIcon style={ style.iconLanguageStyle } />
+              </div>
+              
+              <div style={{ width: 10 }}/>
+              
+              <div style={{ 
+              display: 'flex', flexDirection: 'column', justifyContent: 'center', fontWeight: 600,
+              fontFamily: 'Calibri'}}>
+                ENGLISH
+              </div>
+
+            </div>
+           </div>
         </div>
       </header>
     );
@@ -40,11 +86,15 @@ const style = {
   header_style: {
     overflow: "hidden",
     display: 'flex',
-    backgroundColor: 'white',
+    width: '60%',
   },
   logoStyle:{
     width: 35,
     height: 35,
+  },
+  iconLanguageStyle:{
+    width: 21,
+    height: 21,
   },
   collegeNameStyle:{
     fontFamily: "Arial",
