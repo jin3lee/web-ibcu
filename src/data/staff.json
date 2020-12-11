@@ -1,0 +1,73 @@
+{
+  "Richard-Kong": {
+    "firstName": "Richard",
+    "lastName": "Kong",
+    "title": "Board of Director & President & Secretary"
+  },
+  "YongSeok-Han": {
+    "firstName": "Yong Seok",
+    "lastName": "Han",
+    "title": "Board of Director & Honorary Chairman & Instructor"
+  },
+  "ChongCheh-Ko": {
+    "firstName": "Chong Cheh",
+    "lastName": "Ko",
+    "title": "Board of Director & Treasurer"
+  },
+  "SungChu-Hanh": {
+    "firstName": "Sung Chu",
+    "lastName": "Hanh",
+    "title": "Board of Director & Instructor"
+  },
+  "SunKyu-Whang": {
+    "firstName": "Sun Kyu",
+    "lastName": "Whang",
+    "title": "Board of Director & Instructor"
+  },
+  "Esther-Jang": {
+    "firstName": "Esther",
+    "lastName": "Jang",
+    "title": "Director of Admissions and Records"
+  },
+  "Mike-Banks": {
+    "firstName": "Mike",
+    "lastName": "Banks",
+    "title": "Instructor"
+  },
+  "ChoonWon-Chang": {
+    "firstName": "Choon Won",
+    "lastName": "Chang",
+    "title": "Instructor"
+  },
+  "Jack-DeBay": {
+    "firstName": "Jack",
+    "lastName": "DeBay",
+    "title": "Instructor"
+  },
+  "Shirl-DeBay": {
+    "firstName": "Shirl",
+    "lastName": "DeBay",
+    "title": "Instructor"
+  },
+  "Paul-Kim": {
+    "firstName": "Paul",
+    "lastName": "Kim",
+    "title": "Instructor"
+  },
+  "Ezra-Kyung": {
+    "firstName": "Ezra",
+    "lastName": "Kyung",
+    "title": "Instructor"
+  },
+  "Ken-Southcott": {
+    "firstName": "Ken",
+    "lastName": "Southcott",
+    "title": "Instructor"
+  },
+  "Terry-Tarsiuk": {
+    "staffId": "Terry-Tarsiuk",
+    "firstName": "Terry",
+    "lastName": "Tarsiuk",
+    "title": "Instructor"
+  }
+}

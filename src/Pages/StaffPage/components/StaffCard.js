@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-
 class StaffCard extends React.Component {
 
   render() {
@@ -18,9 +16,9 @@ class StaffCard extends React.Component {
                         marginLeft: 20
                       }}>
             <div style={{ marginBottom: 2, fontSize: 20, fontFamily: 'Avenir', fontWeight: 'bold'}}>
-              <Link to={`/staff/${ this.props.staffId }`} style={{ fontFamily: 'roboto', textDecoration: 'none', color: 'black' }}>
+              <div style={{ fontFamily: 'roboto', textDecoration: 'none', color: 'black' }}>
                 { this.props.firstName } { this.props.lastName }
-              </Link>
+              </div>
             </div>
             <div style={{ color: '#0C54A3', fontSize: 14}}>
               { this.props.title }

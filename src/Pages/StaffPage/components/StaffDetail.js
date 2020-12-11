@@ -1,23 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { connect } from 'react-redux';
-import { useParams } from 'react-router-dom';
+
+import staffData from './../../../data/staff.json';
 
 class StaffDetail extends React.Component {
 
   constructor(props){
     super(props);
     this.state = { 
-      id: null
+      id: null,
+      staffData: staffData,
     };
   }
 
+  componentDidMount () {
+    this.setState({ 
+      id: this.props.match.params.id
+     });
+  }
 
   render() {
-    // console.log('testing: ', id);
+    console.log('staffData', this.state.staffData);
     return(
       <div style={ style.container }>
-        test 
+        {this.state.id}
       </div>
     );
   }
