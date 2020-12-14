@@ -2,7 +2,8 @@
   "Richard-Kong": {
     "firstName": "Richard",
     "lastName": "Kong",
-    "title": "Board of Director & President & Secretary"
+    "title": "Board of Director & President & Secretary",
+    "description": ""
   },
   "YongSeok-Han": {
     "firstName": "Yong Seok",
@@ -27,7 +28,7 @@
   "Esther-Jang": {
     "firstName": "Esther",
     "lastName": "Jang",
-    "title": "Director of Admissions and Records"
+    "title": "Director of Admissions & Records"
   },
   "Mike-Banks": {
     "firstName": "Mike",

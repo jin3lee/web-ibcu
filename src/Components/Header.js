@@ -16,7 +16,7 @@ class Header extends React.Component {
           display: 'flex', 
           flexDirection: 'row', 
           justifyContent: 'space-between',
-          }}>
+        }}>
           
           <div style={ style.header_style }>
             <div style={{ 
