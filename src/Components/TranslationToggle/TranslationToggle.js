@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { ReactComponent as SouthKoreaIcon } from './../../assets/svg/south-korea.svg';
 import { ReactComponent as UnitedStatesIcon } from './../../assets/svg/united-states.svg';
 import { LANGUAGE_ENGLISH, LANGUAGE_KOREAN } from './actionTypes.js';
-import { Link } from "react-router-dom";
 
 class TranslationToggle extends React.Component {
 
@@ -16,7 +15,6 @@ class TranslationToggle extends React.Component {
   }
 
   render() {
-    console.log('language', this.state.selectedLanguage);
     if( this.state.selectedLanguage == LANGUAGE_ENGLISH ){
       return(
 
@@ -105,12 +103,13 @@ class TranslationToggle extends React.Component {
             <div style={{ width: 5 }}/>
 
             <button 
-            onClick={ () => { this.setState({ selectedLanguage: LANGUAGE_KOREAN }) } }
-            style={{ 
+              onClick={ () => { this.setState({ selectedLanguage: LANGUAGE_KOREAN }) } }
+              style={{ 
                 display: 'flex',
                 flexDirection: 'row',
                 backgroundColor: 'rgba(12,84,163,.15)',
                 border: 'none',
+                borderColor: 'red',
                 paddingLeft: 10,
                 paddingRight: 10,
                 paddingTop: 5,
