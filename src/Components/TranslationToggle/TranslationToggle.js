@@ -104,7 +104,7 @@ class TranslationToggle extends React.Component {
 
             <button 
               onClick={ () => { this.setState({ selectedLanguage: LANGUAGE_KOREAN }) } }
-              style={{ 
+              style={{
                 display: 'flex',
                 flexDirection: 'row',
                 backgroundColor: 'rgba(12,84,163,.15)',

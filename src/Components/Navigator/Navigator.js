@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
 
-class Navigater extends React.Component {
+class Navigator extends React.Component {
 
   render() {
     return(
@@ -64,4 +64,4 @@ const mapStateToProps = (state, ownProps) => {
   };
 };
 
-export default connect( mapStateToProps )( Navigater );
+export default connect( mapStateToProps )( Navigator );

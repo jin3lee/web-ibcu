@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 // header & footer & navigator
 import Header from './../Components/Header.js';
 import Footer from './../Components/Footer.js';
-import Navigater from './../Components/Navigater/Navigater.js';
+import Navigator from './../Components/Navigator/Navigator.js';
 
 // paths
 import HomePage from './../Pages/HomePage/HomePage.js';
@@ -31,7 +31,7 @@ class RootContainer extends React.Component {
           <Router>
             <PageDimensions />
             <Header />
-            <Navigater />
+            <Navigator />
               <Switch>
                 <Route path="/" exact component={ HomePage } />
                 <Route path="/home" exact component={ HomePage } />
