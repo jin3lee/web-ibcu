@@ -1,0 +1,27 @@
+{
+    "Header": {
+      "school-name": "Washington International Mission University",
+      "language-korean": "한국어",
+      "language-english": "ENGLISH"
+    },
+    "Footer": {
+      "school-name": "Washington International Mission University",
+      "motto": "PURSUE TRUTH & EXCELLENCE",
+      "copy-right": "© Washington International Mission University | Federal, WA"
+    },
+    "Navigator": {
+      "home": "HOME",
+      "about": "ABOUT",
+      "academics": "ACADEMICS",
+      "apply": "APPLY",
+      "campus": "CAMPUS",
+      "staff": "FACULTY & STAFF"
+    },
+    "Page-Home": {
+      "hashtag-experience": "#WimuExperience",
+      "cover-title": "Live your calling.",
+      "cover-verse": "The Lord said, “Go out and stand on the mountain in the presence of the Lord, for the Lord is about to pass by.” - 1 Kings 19:11",
+      "join-description": "Here, ministry begins the day you walk onto campus.",
+      "join-button": "JOIN WIMU"
+    }
+}

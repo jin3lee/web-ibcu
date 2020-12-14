@@ -1,0 +1,27 @@
+{
+    "Header": {
+      "school-name": "워싱턴 국제 선교 대학",
+      "language-korean": "한국어",
+      "language-english": "ENGLISH"
+    },
+    "Footer": {
+      "school-name": "워싱턴 국제 선교 대학",
+      "motto": "진실과 탁월함 추구",
+      "copy-right": "© 워싱턴 국제 선교 대학 | Federal, WA"
+    },
+    "Navigator": {
+      "home": "집",
+      "about": "약",
+      "academics": "아카데믹",
+      "apply": "대다",
+      "campus": "교정",
+      "staff": "학부 & 직원"
+    },
+    "Page-Home": {
+      "hashtag-experience": "#Wimu경험",
+      "cover-title": "당신의 부름을 실천하십시오.",
+      "cover-verse": "The Lord said, “Go out and stand on the mountain in the presence of the Lord, for the Lord is about to pass by.” - 1 Kings 19:11",
+      "join-description": "Here, ministry begins the day you walk onto campus.",
+      "join-button": "JOIN WIMU"
+    }
+}
