@@ -2,6 +2,7 @@ import React from "react";
 
 import { connect } from 'react-redux';
 import { ReactComponent as WimuLogo } from './../assets/svg/wimuLogo.svg';
+import TranslationToggle from './TranslationToggle/TranslationToggle.js';
 import { ReactComponent as SouthKoreaIcon } from './../assets/svg/south-korea.svg';
 import { ReactComponent as UnitedStatesIcon } from './../assets/svg/united-states.svg';
 import { Link } from "react-router-dom";
@@ -19,6 +20,7 @@ class Header extends React.Component {
         }}>
           
           <div style={ style.header_style }>
+            
             <div style={{ 
               display: 'flex',  
               justifyContent: 'center',
@@ -40,44 +42,10 @@ class Header extends React.Component {
             </div>
           </div>
 
-          <div style={{ 
-            display: 'flex',
-            flexDirection: 'column', 
-            justifyContent: 'center', 
-            marginRight: '2%'
-          }}>
-            <button style={{ 
-              display: 'flex',
-              flexDirection: 'row',
-              backgroundColor: 'rgba(12,84,163,.15)',
-              border: 'none',
-              paddingLeft: 10,
-              paddingRight: 10,
-              paddingTop: 5,
-              paddingBottom: 5,
-              borderRadius: 50,
-              verticalAlign: 'center',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}>
-              
-              <div style={{ 
-                display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-                  <UnitedStatesIcon style={ style.iconLanguageStyle } />
-              </div>
-              
-              <div style={{ width: 10 }}/>
-              
-              <div style={{ 
-              fontWeight: 600,
-              fontFamily: 'Calibri',
-              }}>
-                ENGLISH
-              </div>
-
-            </button>
-           </div>
+          
+          <TranslationToggle />
         </div>
+
       </header>
     );
   }
