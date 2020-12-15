@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "i18next": "^19.8.4",
+    "i18next-browser-languagedetector": "^6.0.1",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
+    "react-i18next": "^11.8.4",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.2.0",
