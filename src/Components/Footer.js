@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from 'react-redux';
 
 class Footer extends React.Component {
 
@@ -8,11 +9,11 @@ class Footer extends React.Component {
         {( !this.props.disableWhiteBuffer ) && <div style={{ backgroundColor: 'white', paddingTop: 40 }}></div>}
         <div style={ style.technicalContainer }>
             <a href="ibcuni.com" style={{ fontFamily: "Avenir", fontSize: '1em', textDecoration: 'none', color: 'white' }}>
-              Washington International Mission University
+              { this.props.translation.Footer.schoolName }
             </a>
 
             <div style={{ fontSize: 15, marginTop: 20, fontFamily: "Marker-Felt", fontWeight: 'bold' }}>
-              PURSUE TRUTH & EXCELLENCE
+              { this.props.translation.Footer.motto }
             </div>
 
             <div style={{ marginTop: 20, fontSize: "1em", fontFamily: "Avenir", fontWeight: 'bold' }}>
@@ -27,7 +28,7 @@ class Footer extends React.Component {
             </div>
 
             <div style={{ fontSize: ".8em", marginTop: 20 }}>
-              © Washington International Mission University | Federal, WA
+              { this.props.translation.Footer.copyright }
             </div>
         </div>
       </div>
@@ -49,5 +50,10 @@ const style = {
     height: "100%",
   },
 }
+const mapStateToProps = (state, ownProps) => {
+  return {
+    translation: state.translationToggle.translation
+  };
+};
 
-export default Footer;
+export default connect( mapStateToProps )( Footer );
