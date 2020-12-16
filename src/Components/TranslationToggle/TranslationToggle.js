@@ -1,21 +1,17 @@
 import React from "react";
 
 import { connect } from 'react-redux';
+
 import { ReactComponent as SouthKoreaIcon } from './../../assets/svg/south-korea.svg';
 import { ReactComponent as UnitedStatesIcon } from './../../assets/svg/united-states.svg';
 import { LANGUAGE_ENGLISH, LANGUAGE_KOREAN } from './actionTypes.js';
+import { updateLanguage } from './actions.js';
 
 class TranslationToggle extends React.Component {
 
-  constructor(props){
-    super(props);
-    this.state = {
-      selectedLanguage: LANGUAGE_KOREAN,
-    }
-  }
-
   render() {
-    if( this.state.selectedLanguage == LANGUAGE_ENGLISH ){
+    
+    if( this.props.language === LANGUAGE_ENGLISH ){
       return(
 
         <div style={{ 
@@ -31,7 +27,7 @@ class TranslationToggle extends React.Component {
               justifyContent: 'center', 
           }}>
               <button 
-                  onClick={ () => { this.setState({ selectedLanguage: LANGUAGE_ENGLISH }) } }
+                  onClick={ () => { this.props.dispatch( updateLanguage( LANGUAGE_ENGLISH ) ) } }
                   style={{ 
                     display: 'flex',
                     flexDirection: 'row',
@@ -69,7 +65,7 @@ class TranslationToggle extends React.Component {
               <div style={{ width: 5 }}/>
 
               <button 
-              onClick={ () => { this.setState({ selectedLanguage: LANGUAGE_KOREAN }) } }
+              onClick={ () => { this.props.dispatch( updateLanguage( LANGUAGE_KOREAN ) ) } }
               style={{ 
                 display: 'flex', flexDirection: 'column', justifyContent: 'center', border: 'none', backgroundColor: 'rgba(0,0,0,0)' }}>
                   <SouthKoreaIcon style={ style.iconLanguageStyle } />
@@ -94,7 +90,7 @@ class TranslationToggle extends React.Component {
           }}>
 
             <button 
-            onClick={ () => { this.setState({ selectedLanguage: LANGUAGE_ENGLISH }) } }
+            onClick={ () => { this.props.dispatch( updateLanguage( LANGUAGE_ENGLISH ) ) } }
             style={{ 
               display: 'flex', flexDirection: 'column', justifyContent: 'center', border: 'none', backgroundColor: 'rgba(0,0,0,0)' }}>
                 <UnitedStatesIcon style={ style.iconLanguageStyle } />
@@ -103,7 +99,7 @@ class TranslationToggle extends React.Component {
             <div style={{ width: 5 }}/>
 
             <button 
-              onClick={ () => { this.setState({ selectedLanguage: LANGUAGE_KOREAN }) } }
+              onClick={ () => { this.props.dispatch( updateLanguage( LANGUAGE_KOREAN ) ) } }
               style={{
                 display: 'flex',
                 flexDirection: 'row',
@@ -154,6 +150,7 @@ const style = {
 const mapStateToProps = (state, ownProps) => {
   return {
     rootContainer: state.rootContainer,
+    language: state.translationToggle.language
   };
 };
 

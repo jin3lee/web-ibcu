@@ -5,17 +5,29 @@ import {
 	LANGUAGE_KOREAN 
 } from "./actionTypes";
 
-import english from './../../data/english.json';
-import korean from './../../data/korean.json';
+import english from './../../locate/en/translate.json';
+import korean from './../../locate/kr/translate.json';
 
 const initialState = {
-	language: null,
+	language: LANGUAGE_ENGLISH,
+	translation: english,
 }
 
 export default function reducer( state = initialState, payload ) {
 	switch ( payload.type ) {
 		case UPDATE_LANGUAGE: {
-			return { ...state, language: payload.language };
+			if( payload.language === LANGUAGE_KOREAN ) {
+				return { 
+					...state,
+					language: payload.language,
+					translation: korean 
+				};
+			}
+			return { 
+				...state, 
+				language: payload.language,
+				translation: english,
+			};
 		}
 		default: {
 			return { ...state }

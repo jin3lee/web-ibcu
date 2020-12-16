@@ -9,17 +9,17 @@ class Navigator extends React.Component {
     return(
       <div style={{ backgroundColor: '#0C54A3' }}>
         <div style={ style.technicalContainer }>
-          <Link to="/home" style={ style.navButtonStyle }>HOME</Link>
+          <Link to="/home" style={ style.navButtonStyle }>{ this.props.translation.Navigator.home }</Link>
           <div style={{ marginLeft: "2%", marginRight: "2%"}}> / </div>
-          <Link to="/about" style={ style.navButtonStyle }>ABOUT</Link>
+          <Link to="/about" style={ style.navButtonStyle }>{ this.props.translation.Navigator.about }</Link>
           <div style={{ marginLeft: "2%", marginRight: "2%"}}> / </div>
-          <Link to="/academics" style={ style.navButtonStyle }>ACADEMICS</Link>
+          <Link to="/academics" style={ style.navButtonStyle }>{ this.props.translation.Navigator.academics }</Link>
           <div style={{ marginLeft: "2%", marginRight: "2%"}}> / </div>
-          <Link to="/apply" style={ style.navButtonStyle }>APPLY</Link>
+          <Link to="/apply" style={ style.navButtonStyle }>{ this.props.translation.Navigator.apply }</Link>
           <div style={{ marginLeft: "2%", marginRight: "2%"}}> / </div>
-          <Link to="/campus" style={ style.navButtonStyle }>CAMPUS</Link>
+          <Link to="/campus" style={ style.navButtonStyle }>{ this.props.translation.Navigator.campus }</Link>
           <div style={{ marginLeft: "2%", marginRight: "2%"}}> / </div>
-          <Link to="/staff" style={ style.navButtonStyle }>FACULTY & STAFF</Link>
+          <Link to="/staff" style={ style.navButtonStyle }>{ this.props.translation.Navigator.staff }</Link>
         </div>
       </div>
     );
@@ -61,6 +61,7 @@ const style = {
 const mapStateToProps = (state, ownProps) => {
   return {
     rootContainer: state.rootContainer,
+    translation: state.translationToggle.translation
   };
 };
 
