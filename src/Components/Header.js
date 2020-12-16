@@ -37,7 +37,7 @@ class Header extends React.Component {
 
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
               <Link to="/" style={ style.collegeNameStyle }>
-                Washington International Mission University
+                { this.props.translation.Header.schoolName }
               </Link>
             </div>
           </div>
@@ -78,7 +78,7 @@ const style = {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    rootContainer: state.rootContainer,
+    translation: state.translationToggle.translation
   };
 };
 
