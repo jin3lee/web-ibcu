@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from 'react-redux';
 import { Redirect } from 'react-router';
 import ExperienceGallery from './components/ExperienceGallery.js';
 
@@ -19,7 +20,7 @@ class HomePage extends React.Component {
             <ExperienceGallery />
             
             <div style={{ backgroundColor: 'rgb(228, 235, 243)', padding: '7%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }}>
-              <div style={{ textAlign: 'center', fontFamily: 'Roboto', fontWeight: '550', fontSize: 25 }}>Here, ministry begins the day you walk onto campus.</div>
+              <div style={{ textAlign: 'center', fontFamily: 'Roboto', fontWeight: '550', fontSize: 25 }}>{ this.props.translation.PageHome.joinDescription }</div>
               <div style={{ padding: '2%' }}/>
               <button 
                 onClick={ ()=>{ this.setState({ navigateToApply: true }) } } 
@@ -36,7 +37,7 @@ class HomePage extends React.Component {
                   fontFamily: 'Roboto', 
                   fontWeight: '400' 
                 }}>
-                  JOIN WIMU
+                  { this.props.translation.PageHome.joinButton }
                 </button>
               { ( !this.state.navigateToApply ) ? null : <Redirect to="/apply" push={ true } /> }
             </div>
@@ -52,4 +53,10 @@ const style = {
     backgroundColor: "white",
   },
 }
-export default HomePage;
+const mapStateToProps = (state, ownProps) => {
+  return {
+    translation: state.translationToggle.translation
+  };
+};
+
+export default connect( mapStateToProps )( HomePage );

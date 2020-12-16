@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from 'react-redux';
 
 import imageTree from '../../../assets/washington_tree_mountain.jpg';
 
@@ -10,12 +11,12 @@ class ExperienceGallery extends React.Component {
         <div style={{ marginLeft: '6%' }}>
           <div style={{ display: "flex" }}>
             <div style={{ flex: 1, fontSize: '1.5em', color: '#0C54A3', fontWeight: 'bold', fontStyle: 'italic', backgroundColor:"#E4EBF3", paddingLeft: 15, paddingRight: 15, paddingTop:8, paddingBottom:8 }}>
-              #WimuExperience
+              { this.props.translation.PageHome.hashtagExperience }
             </div>
             <div style={{ flex: 1.5 }}/>
           </div>
           <div style={{ fontSize: '4em', fontWeight: 'bold', color: 'white' }}>
-            Live your calling.
+            { this.props.translation.PageHome.coverTitle }
           </div>
           <div style={{ backgroundColor:'#0C54A3', height: 10, width: 200, marginTop: 15 }} />
           <div style={{
@@ -31,7 +32,7 @@ class ExperienceGallery extends React.Component {
               fontStyle: 'Italic',
               fontFamily: 'Avenir',
             }}>
-              The Lord said, “Go out and stand on the mountain in the presence of the Lord, for the Lord is about to pass by.” - 1 Kings 19:11
+              { this.props.translation.PageHome.coverVerse }
             </div>
           </div>
         </div>
@@ -52,4 +53,10 @@ const style = {
   }
 }
 
-export default ExperienceGallery;
+const mapStateToProps = (state, ownProps) => {
+  return {
+    translation: state.translationToggle.translation
+  };
+};
+
+export default connect( mapStateToProps )( ExperienceGallery );
