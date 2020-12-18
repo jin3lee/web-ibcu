@@ -40,12 +40,16 @@ class TranslationToggle extends React.Component {
                     borderRadius: 50,
                     verticalAlign: 'center',
                     alignItems: 'center',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    outline: 'none',
+                    boxShadow: 'none',
                   }}
               >
                 
                 <div 
                   style={{ 
+                    outline: 'none',
+                    boxShadow: 'none',
                     display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                     <UnitedStatesIcon style={ style.iconLanguageStyle } />
                 </div>
@@ -67,6 +71,8 @@ class TranslationToggle extends React.Component {
               <button 
               onClick={ () => { this.props.dispatch( updateLanguage( LANGUAGE_KOREAN ) ) } }
               style={{ 
+                outline: 'none',
+                boxShadow: 'none',
                 display: 'flex', flexDirection: 'column', justifyContent: 'center', border: 'none', backgroundColor: 'rgba(0,0,0,0)' }}>
                   <SouthKoreaIcon style={ style.iconLanguageStyle } />
               </button>
@@ -92,6 +98,8 @@ class TranslationToggle extends React.Component {
             <button 
             onClick={ () => { this.props.dispatch( updateLanguage( LANGUAGE_ENGLISH ) ) } }
             style={{ 
+              outline: 'none',
+              boxShadow: 'none',
               display: 'flex', flexDirection: 'column', justifyContent: 'center', border: 'none', backgroundColor: 'rgba(0,0,0,0)' }}>
                 <UnitedStatesIcon style={ style.iconLanguageStyle } />
             </button>
@@ -101,6 +109,8 @@ class TranslationToggle extends React.Component {
             <button 
               onClick={ () => { this.props.dispatch( updateLanguage( LANGUAGE_KOREAN ) ) } }
               style={{
+                outline: 'none',
+                boxShadow: 'none',
                 display: 'flex',
                 flexDirection: 'row',
                 backgroundColor: 'rgba(12,84,163,.15)',
@@ -126,6 +136,8 @@ class TranslationToggle extends React.Component {
               <div style={{ width: 10 }}/>
               
               <div style={{ 
+                outline: 'none',
+                boxShadow: 'none',
                 display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                   <SouthKoreaIcon style={ style.iconLanguageStyle } />
               </div>
