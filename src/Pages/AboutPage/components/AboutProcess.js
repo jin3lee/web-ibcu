@@ -64,7 +64,7 @@ const style = {
   container: {
     display: 'flex',
     flexDirection: 'row',
-    backgroundColor: '#E4EBF3',
+    backgroundColor: 'white',
     justifyContent: 'center',
     flexWrap: 'wrap',
     color: 'black',

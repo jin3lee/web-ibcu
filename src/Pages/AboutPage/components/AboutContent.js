@@ -44,17 +44,6 @@ class AboutContent extends React.Component {
       <div style={ style.container }>
 
         <div style={{ marginLeft: '5%', marginRight: '5%' }}>
-          <div style={{ display: 'flex', flexDirection: 'row', color: 'rgb(90, 90, 90)' }}>
-            <button onClick={ () => { this._updatePageTo( PAGE_ID_HOME ) } } style={ style.backFlowButtonStyle }>
-              Home
-            </button>
-            <div style={ style.backFlowButtonStyle }>
-              >
-            </div>
-            <button onClick={ () => { this._updatePageTo( PAGE_ID_ABOUT ) } } style={ style.backFlowButtonStyle }>
-              About
-            </button>
-          </div>
 
           { (this.state.currentContentById === CONTENT_ID_PASSION) && this._getPassionContent() }
 
@@ -73,7 +62,7 @@ const style = {
     paddingTop: '5%',
     paddingBottom: '10%',
     color: 'black',
-    backgroundColor: '#E4EBF3',
+    backgroundColor: 'white',
   },
   backFlowButtonStyle: {
     marginRight: 10,
