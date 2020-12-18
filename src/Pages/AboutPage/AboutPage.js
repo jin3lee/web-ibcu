@@ -5,6 +5,7 @@ import AboutContent from './components/AboutContent.js';
 import AboutGoal from './components/AboutGoal.js';
 import AboutProcess from './components/AboutProcess.js';
 import AboutCoreValue from './components/AboutCoreValue.js';
+import AboutBelief from './components/AboutBelief.js';
 
 class AboutPage extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class AboutPage extends React.Component {
             <AboutGoal />
             <AboutProcess />
             <AboutCoreValue />
+            <AboutBelief />
           </div>
       </div>
     );
