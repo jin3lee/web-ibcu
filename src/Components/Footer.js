@@ -8,11 +8,11 @@ class Footer extends React.Component {
       <div>
         {( !this.props.disableWhiteBuffer ) && <div style={{ backgroundColor: 'white', paddingTop: 40 }}></div>}
         <div style={ style.technicalContainer }>
-            <a href="ibcuni.com" style={{ fontFamily: "Avenir", fontSize: '1em', textDecoration: 'none', color: 'white' }}>
+            <a href="ibcuni.com" style={{ fontFamily: "Avenir", fontSize: '1em', textDecoration: 'none', color: 'white', marginLeft: 10, marginRight: 10, textAlign: 'center', justifyContent: 'center' }}>
               { this.props.translation.Footer.schoolName }
             </a>
 
-            <div style={{ fontSize: 15, marginTop: 20, fontFamily: "Marker-Felt", fontWeight: 'bold' }}>
+            <div style={{ fontSize: 15, marginTop: 20, fontFamily: "Marker-Felt", fontWeight: 'bold', marginLeft: 10, marginRight: 10, textAlign: 'center', justifyContent: 'center' }}>
               { this.props.translation.Footer.motto }
             </div>
 
@@ -27,7 +27,7 @@ class Footer extends React.Component {
               />
             </div>
 
-            <div style={{ fontSize: ".8em", marginTop: 20 }}>
+            <div style={{ fontSize: ".8em", marginTop: 20, marginLeft: 10, marginRight: 10, textAlign: 'center', justifyContent: 'center' }}>
               { this.props.translation.Footer.copyright }
             </div>
         </div>
