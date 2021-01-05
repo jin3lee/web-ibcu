@@ -19,7 +19,7 @@ class HomePage extends React.Component {
             
             <ExperienceGallery />
             
-            <div style={{ backgroundColor: 'rgb(228, 235, 243)', padding: '7%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }}>
+            <div style={{ backgroundColor: 'rgb(228, 235, 243)', paddingTop: '5%',paddingBottom: '5%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }}>
               <div style={{ textAlign: 'center', fontFamily: 'Roboto', fontWeight: '550', fontSize: 25 }}>{ this.props.translation.PageHome.joinDescription }</div>
               <div style={{ padding: '2%' }}/>
               <button 
@@ -30,12 +30,13 @@ class HomePage extends React.Component {
                   width: '20%', 
                   textAlign: 'center', 
                   padding: 15, 
+                  width: 'fit-content',
                   borderRadius: 5, 
                   borderColor: 'white',
                   textDecoration: 'none', 
                   fontSize: 15, 
                   fontFamily: 'Roboto', 
-                  fontWeight: '400' 
+                  fontWeight: '400',
                 }}>
                   { this.props.translation.PageHome.joinButton }
                 </button>
