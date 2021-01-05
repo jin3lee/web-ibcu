@@ -20,7 +20,7 @@ class HomePage extends React.Component {
             <ExperienceGallery />
             
             <div style={{ backgroundColor: 'rgb(228, 235, 243)', paddingTop: '5%',paddingBottom: '5%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }}>
-              <div style={{ textAlign: 'center', fontFamily: 'Roboto', fontWeight: '550', fontSize: 25 }}>{ this.props.translation.PageHome.joinDescription }</div>
+              <div style={{ textAlign: 'center', fontFamily: 'Roboto', fontWeight: '550', fontSize: 25, marginLeft: 10, marginRight: 10, }}>{ this.props.translation.PageHome.joinDescription }</div>
               <div style={{ padding: '2%' }}/>
               <button 
                 onClick={ ()=>{ this.setState({ navigateToApply: true }) } } 
