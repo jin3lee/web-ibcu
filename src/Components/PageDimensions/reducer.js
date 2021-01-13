@@ -2,7 +2,7 @@ import { UPDATE_SITE_WIDTH, UPDATE_SITE_HEIGHT } from "./actionTypes";
 
 const initialState = {
 	width: null,
-  height: null,
+  	height: null,
 }
 
 export default function reducer( state = initialState, payload ) {

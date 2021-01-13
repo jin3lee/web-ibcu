@@ -3,9 +3,10 @@ import React from "react";
 import { connect } from 'react-redux';
 import { ReactComponent as WimuLogo } from './../assets/svg/wimuLogo.svg';
 import TranslationToggle from './TranslationToggle/TranslationToggle.js';
-import { ReactComponent as SouthKoreaIcon } from './../assets/svg/south-korea.svg';
-import { ReactComponent as UnitedStatesIcon } from './../assets/svg/united-states.svg';
+import { ReactComponent as HamburgerMenu } from './../assets/svg/hamburgerMenu.svg';
 import { Link } from "react-router-dom";
+
+import { displaySidebar } from './../../src/Container/actions.js'
 
 class Header extends React.Component {
 
@@ -19,14 +20,13 @@ class Header extends React.Component {
   render() {
 
     let screenWidth = this.state.screenWidth;
-
-    if( this.props.pageDimensions && screenWidth !== this.props.pageDimensions.width ) 
+    if( this.props.pageDimensions 
+      && screenWidth !== this.props.pageDimensions.width ) 
     {
       screenWidth = this.props.pageDimensions.width;
     }
 
     if( screenWidth < 515 ) {
-      console.log('screenWidth', screenWidth, this.state.screenWidth < 515 );
       return(
         <header className="header-background">
           
@@ -37,7 +37,6 @@ class Header extends React.Component {
             
             <div style={{ 
               display: 'flex',
-              width: '70%', 
               marginLeft: '5%',
               marginRight: '5%',
               paddingTop: '3%',
@@ -61,13 +60,26 @@ class Header extends React.Component {
               <Link to="/" style={ style.collegeNameStyle }>
                 { this.props.translation.Header.schoolName }
               </Link>
+
+              <button 
+                style={{ 
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  justifyContent: 'center', 
+                  width: '20%', 
+                  border: 'none',
+                  outline: 'none',
+                  boxShadow: 'none',
+                  backgroundColor: 'rgba(0,0,0,0)'
+                }}
+                onClick={ () => { 
+                  this.props.dispatch( displaySidebar(true) );
+                } }
+              >         
+                <HamburgerMenu />
+              </button>
             </div>
           </div>
-
-              {/* TODO
-          <TranslationToggle />
-            <div style={{ paddingBottom: 10 }} />
-              */}
         </header>
       );
 
@@ -106,8 +118,7 @@ class Header extends React.Component {
               </div>
             </div>
 
-            
-            <TranslationToggle />
+            <TranslationToggle /> 
           </div>
 
         </header>
@@ -141,10 +152,11 @@ const style = {
   },
 }
 
-const mapStateToProps = (state, ownProps) => {  
+const mapStateToProps = (state, ownProps) => { 
   return {
     translation: state.translationToggle.translation,
-    pageDimensions: state.pageDimensions
+    pageDimensions: state.pageDimensions,
+    displaySidebar: state.rootContainer.displaySidebar,
   };
 };
 

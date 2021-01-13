@@ -1,9 +1,6 @@
 import React from "react";
 
 import { connect } from 'react-redux';
-import { updatePage } from '../../../Container/actions.js';
-import { PAGE_ID_HOME, PAGE_ID_ABOUT } from '../../../Container/actionTypes.js'
-
 
 const CONTENT_ID_PASSION = "CONTENT_ID_PASSION";
 
@@ -14,11 +11,6 @@ class AboutContent extends React.Component {
     this.state = {
       currentContentById: CONTENT_ID_PASSION,
     }
-    this._updatePageTo = this._updatePageTo.bind(this);
-  }
-
-  _updatePageTo( pageId ) {
-    this.props.dispatch( updatePage( pageId ) );
   }
 
   _getPassionContent = () => {

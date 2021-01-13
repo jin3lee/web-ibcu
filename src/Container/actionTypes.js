@@ -6,3 +6,4 @@ export const PAGE_ID_ACADEMICS = "PAGE_ID_ACADEMICS";
 export const PAGE_ID_STAFF = "PAGE_ID_STAFF";
 
 export const UPDATE_PAGE = "UPDATE_PAGE";
+export const DISPLAY_SIDEBAR = "DISPLAY_SIDEBAR";

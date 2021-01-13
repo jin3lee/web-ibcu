@@ -50,7 +50,10 @@ class TranslationToggle extends React.Component {
                   style={{ 
                     outline: 'none',
                     boxShadow: 'none',
-                    display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    justifyContent: 'center'
+                  }}>
                     <UnitedStatesIcon style={ style.iconLanguageStyle } />
                 </div>
                 

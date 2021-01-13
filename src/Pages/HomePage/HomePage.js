@@ -32,7 +32,6 @@ class HomePage extends React.Component {
                   width: '20%', 
                   textAlign: 'center', 
                   padding: 15, 
-                  width: 'fit-content',
                   borderRadius: 5, 
                   borderColor: 'white',
                   textDecoration: 'none', 

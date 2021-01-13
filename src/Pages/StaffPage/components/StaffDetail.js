@@ -21,7 +21,6 @@ class StaffDetail extends React.Component {
   }
 
   render() {
-    console.log('staffData', this.state.staffData);
     return(
       <div style={ style.container }>
         {this.state.id}
