@@ -97,12 +97,12 @@ class RootContainer extends React.Component {
                   <Navigator />
                     <Switch>
                       <Route path="/" exact component={ HomePage } />
-                      <Route path="/home" exact component={ HomePage } />
-                      <Route path="/about" exact component={ AboutPage } />
-                      <Route path="/academics" exact component={ AcademicsPage } />
-                      <Route path="/apply" exact component={ ApplyPage } />
-                      <Route path="/campus" exact component={ CampusPage } />
-                      <Route path="/staff" exact component={ StaffPage } />
+                      <Route path="/home" component={ HomePage } />
+                      <Route path="/about" component={ AboutPage } />
+                      <Route path="/academics/a" component={ AcademicsPage } />
+                      <Route path="/apply" component={ ApplyPage } />
+                      <Route path="/campus" component={ CampusPage } />
+                      <Route path="/staff" component={ StaffPage } />
                       <Route path="/staff/:id" exact component={ StaffDetail } />
                     </Switch>
                   <Footer disableWhiteBuffer={ true } />

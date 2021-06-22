@@ -6,7 +6,7 @@ import staffData from './../../../data/staff.json';
 
 class StaffDetail extends React.Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = { 
       id: null,
